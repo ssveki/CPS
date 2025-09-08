@@ -1,0 +1,30 @@
+@font-face {
+    font-family: TTLakes-medium;
+    src: url(fonts/TTLakes-Medium.ttf);
+}
+@font-face {
+    font-family: TTLakes-bold;
+    src: url(fonts/TTLakesCondensed-Bold.ttf);
+}
+@font-face {
+    font-family: TTLakes-black;
+    src: url(fonts/TTLakesCompressed-Black.ttf);
+}
+main{
+    padding-top: 88px;
+}
+
+.title{
+    background-color: black;
+    &__highlight{
+        background-color: #41F6D7;
+        width: 4px;
+        height: 40px;
+
+    }
+    &__services{
+        color: #1B1C21;
+        font-size: 28px;
+        font-family: TTLakes-bold;
+    }
+}
