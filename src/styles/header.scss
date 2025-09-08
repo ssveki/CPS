@@ -1,0 +1,45 @@
+body {width: 100%; background-color: #F8F8F8;}
+
+.header {
+    width: 100%;
+    height: 88px;
+    background-color: #fff;
+    border-bottom: solid 1px #D9FFF5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__navigation {
+        list-style-type: none;
+        gap: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 16px;
+        padding-right: 16px;
+
+        &--link {
+            background-color: #FF3E79;
+            height: 40px;
+            width: 40px;
+            border-radius: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &--logo{
+            width: 96px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &--divider{
+            width: 2px;
+            height: 32px;
+            background-color: #EAEAEA;
+        }
+    }
+}
