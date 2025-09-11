@@ -10,12 +10,11 @@
     font-family: TTLakes-black;
     src: url(fonts/TTLakesCompressed-Black.ttf);
 }
-main{
-    padding-top: 88px;
-}
 
 .title{
-    background-color: black;
+    display: flex;
+    align-items: center;
+
     &__highlight{
         background-color: #41F6D7;
         width: 4px;
@@ -23,8 +22,35 @@ main{
 
     }
     &__services{
+        padding-left: 12px;
         color: #1B1C21;
         font-size: 28px;
         font-family: TTLakes-bold;
+    }
+}
+.slideMenu::-webkit-scrollbar{
+        width: 0;
+    }
+.slideMenu{
+    display: flex;
+    align-items: center;
+    overflow: auto;
+    &__button{
+        font-family: TTLakes-medium;
+        font-size: 16px;
+        color: #7E7E82;
+        background-color: #F8F8F8;
+        margin-left: 16px;
+        white-space: nowrap;
+        border: none;
+        &--active{
+            border: solid 2px #B8FFEC;
+            border-radius: 6px;
+            width: 246px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
     }
 }
