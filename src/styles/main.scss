@@ -214,10 +214,11 @@
             display: flex;
             padding: 16px;
             flex-direction: column;
+            margin: 16px 8px 16px 8px;
 
 
             &--group{
-                margin:  1px 1px 8px 1px ;
+                gap: 28px;
                 &--text{
                     font-family: TTLakes;
                     font-size: 16px;
@@ -250,5 +251,29 @@
             }
         }
         
+    }
+
+    &__bottom{
+        margin: 16px;
+        margin-bottom: 40px;
+        &--text{
+            font-size: 14px;
+        }
+
+        &--group{
+            
+            &--text{
+                font-size: 16px;
+                font-family: TTLakes;
+                font-weight: normal;
+
+
+                &--dropdown{
+                width: 6px;
+                height: 12px;
+            }
+            }
+
+        }
     }
 }
