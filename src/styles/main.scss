@@ -13,6 +13,8 @@
 
 *{
     color: #1B1C21;
+    margin: 0;
+    padding: 0;
 }
 
 .title{
@@ -72,6 +74,7 @@
         display: flex;
         align-items: center;
         margin-left: 24px;
+        padding: 16px 0;
 
         &--name{
             margin-left: 16px;
@@ -84,19 +87,25 @@
             height: 10px;
         }
     }
+    &__image{
+        width: 100%;
+    }
 }
 
 .brands{
+    margin-top: 24px;
     &__head{
+        display: flex;
+        align-items: center;
         background: linear-gradient(to right, #F8F8F8, #FFFFFF);
         border-top: solid 1px #D9FFF5;
-        margin-top: 24px;
+        padding: 16px;
 
         &--text{
             font-family: TTLakes;
             font-size: 16px;
             color: #7E7E82;
-            margin-left: 16px;
+            margin-top: 0;
         }
     }
     &__cats::-webkit-scrollbar{width: 0;}
@@ -135,15 +144,17 @@
 
 .equipment{
     &__head{
+        display: flex;
+        align-items: center;
         background: linear-gradient(to right, #F8F8F8, #FFFFFF);
         border-top: solid 1px #D9FFF5;
-        margin-top: 24px;
+        padding: 16px;
 
         &--text{
             font-family: TTLakes;
             font-size: 16px;
             color: #7E7E82;
-            margin-left: 16px;
+            margin-top: 0;
         }
     }
     &__cats::-webkit-scrollbar{width: 0;}
@@ -191,15 +202,17 @@
 .prices{
     
     &__head{
+        display: flex;
+        align-items: center;
         background: linear-gradient(to right, #F8F8F8, #FFFFFF);
         border-top: solid 1px #D9FFF5;
-        margin-top: 24px;
+        padding: 16px;
 
         &--text{
             font-family: TTLakes;
             font-size: 16px;
             color: #7E7E82;
-            margin-left: 16px;
+            margin-top: 0;
         }
     }
     &__cats::-webkit-scrollbar{width: 0;}
@@ -209,27 +222,35 @@
 
         &--name{
             background-color: #FFFFFF;
-            border: solid 1px #EAEAEA;
+            border: 0;
             border-radius: 6px;
             display: flex;
-            padding: 16px;
+            padding: 0 16px 16px 16px;
             flex-direction: column;
             margin: 16px 8px 16px 8px;
-
+            
 
             &--group{
-                gap: 28px;
+                line-height: 0.2;
                 &--text{
                     font-family: TTLakes;
                     font-size: 16px;
                     font-weight: normal;
                     color: #7E7E82;
+                    white-space: nowrap;
+                    line-height: 16px;
+                    margin: 16px 0px 4px 0px;
                 }
 
                 &--maintext{
                     font-family: TTLakes;
                     font-size: 16px;
                     font-weight: normal;
+                    display: flex;
+                    align-items: center;
+                    gap: 28px;
+                    white-space: nowrap;
+                    line-height: 18px;
                 }
 
                 &--btn{
@@ -245,35 +266,32 @@
                 font-size: 12px;
                 font-family: TTLakes;
                 padding: 11px;
-
             }
-
             }
         }
         
     }
 
     &__bottom{
-        margin: 16px;
-        margin-bottom: 40px;
+    margin: 16px;
+    margin-bottom: 40px;
+    
         &--text{
             font-size: 14px;
+            margin-bottom: 16px;
         }
 
         &--group{
-            
-            &--text{
-                font-size: 16px;
-                font-family: TTLakes;
-                font-weight: normal;
+            font-size: 16px;
+            font-family: TTLakes;
+            font-weight: normal;
+            margin: 0;
 
-
-                &--dropdown{
-                width: 6px;
-                height: 12px;
+            &--dropdown{
+                margin-left: 10px;
             }
-            }
-
         }
     }
 }
+
+

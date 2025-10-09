@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CPS</title>
     <link rel="stylesheet" href="src/global.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
 </head>
 <body>
     <header class="header">
@@ -32,36 +33,37 @@
             </div>
             <img src="src/images/cps.png" class="firstBlock__image">
         </section>
-        <section class="brands">
+        <section class="swiper brands">
             <div class="brands__head">
                 <p class="brands__head--text">РЕМОНТ ТЕХНИКИ РАЗЛИЧНЫХ БРЕНДОВ</p>
             </div>
-            <div class="brands__cats">
-                <div class="brands__cats--brand">
+            <div class="swiper-wrapper brands__cats">
+                <div class="swiper-slide brands__cats--brand">
                     <img src="src/images/brands/lenovo.png" class="brands__cats--brand--logo">
                     <button class="brands__cats--brand--btn"><img src="src/images/dropdown.png" class="brands__cats--btn--icon"></button>
                 </div>
-                <div class="brands__cats--brand">
+                <div class="swiper-slide brands__cats--brand">
                     <img src="src/images/brands/samsung.png" class="brands__cats--brand--logo">
                     <button class="brands__cats--brand--btn"><img src="src/images/dropdown.png" class="brands__cats--brand--btn--icon"></button>
                 </div>
-                <div class="brands__cats--brand">
+                <div class="swiper-slide brands__cats--brand">
                     <img src="src/images/brands/apple.png" class="brands__cats--brand--logo">
                     <button class="brands__cats--brand--btn"><img src="src/images/dropdown.png" class="brands__cats--brand--btn--icon"></button>
                 </div>
-                <div class="brands__cats--brand">
+                <div class="swiper-slide brands__cats--brand">
                     <img src="src/images/brands/bosch.png" class="brands__cats--brand--logo">
                     <button class="brands__cats--brand--btn"><img src="src/images/dropdown.png" class="brands__cats--brand--btn--icon"></button>
                 </div>
-                <div class="brands__cats--brand">
+                <div class="swiper-slide brands__cats--brand">
                     <img src="src/images/brands/hp.png" class="brands__cats--brand--logo">
                     <button class="brands__cats--brand--btn"><img src="src/images/dropdown.png" class="brands__cats--brand--btn--icon"></button>
                 </div>
-                <div class="brands__cats--brand">
+                <div class="swiper-slide brands__cats--brand">
                     <img src="src/images/brands/acer.png" class="brands__cats--brand--logo">
                     <button class="brands__cats--brand--btn"><img src="src/images/dropdown.png" class="brands__cats--brand--btn--icon"></button>
                 </div>
             </div>
+            <div class="swiper-pagination"></div> 
         </section>
         
         <section class="equipment">
@@ -85,7 +87,8 @@
                     <h3 class="equipment__cats--name--text">Ремонт мониторов</h3>
                     <button class="equipment__cats--name--btn"><img src="src/images/dropdown.png" class="equipment__cats--name--btn--icon"></button>
                 </div>
-            </div> 
+            </div>
+            <div class="swiper-pagination"></div> 
         </section>
 
         <section class="prices">
@@ -96,7 +99,7 @@
                 <div class="prices__cats--name">
                     <div class="prices__cats--name--group">
                         <p class="prices__cats--name--group--text">Ремонтные услуги</p>
-                        <h3 class="prices__cats--name--group--maintext">Тестирование с выдачей технического заключения</h3>
+                        <h3 class="prices__cats--name--group--maintext">Тестирование с выдачей<br>технического заключения</h3>
                     </div>
                     <div class="prices__cats--name--group">
                         <p class="prices__cats--name--group--text">Цена</p>
@@ -104,8 +107,8 @@
                     </div>
                     <div class="prices__cats--name--group">
                         <p class="prices__cats--name--group--text">Срок</p>
-                        <h3 class="prices__cats--name--group--maintext">30-120 мин</h3>
-                        <button class="prices__cats--name--group--btn">ЗАКАЗАТЬ<img src="src/images/dropdown.svg"></button>
+                        <h3 class="prices__cats--name--group--maintext">30-120 мин<button class="prices__cats--name--group--btn">ЗАКАЗАТЬ<img src="src/images/dropdown.svg"></button></h3>
+                        
                     </div>
                 </div>
                 <div class="prices__cats--name">
@@ -119,24 +122,39 @@
                     </div>
                     <div class="prices__cats--name--group">
                         <p class="prices__cats--name--group--text">Срок</p>
-                        <h3 class="prices__cats--name--group--maintext">30-120 мин</h3>
-                        <button class="prices__cats--name--group--btn">ЗАКАЗАТЬ<img src="src/images/dropdown.svg"></button>
+                        <h3 class="prices__cats--name--group--maintext">30-120 мин<button class="prices__cats--name--group--btn">ЗАКАЗАТЬ<img src="src/images/dropdown.svg"></button></h3>
                     </div>
                 </div>
             </div>
 
             <div class="prices__bottom">
                 <p class="prices__bottom--text">Все цены указаны с учетом НДС. Стоимость ремонта указана на единичную услугу. Для получения коммерческого предложения на постоянное обслуживание, оставьте заявку.</p>
-                <h4 class="prices__bottom--group--text">Получить коммерческое предложение</h4>
-                <img src="src/images/dropdown.png" class="prices__bottom--group--text--dropdown">
+                <h4 class="prices__bottom--group">Получить коммерческое<br>предложение<img src="src/images/dropdown.png" class="prices__bottom--group--dropdown"></h4>
+                
             </div>
         </section>
         
-        <footer>
-            <p>© 2019 CPS<br>Разработано командой Apesong</p>
-            <p>Политика конфиденциальности</p>
-            <p>Информация, размещенная на данной странице, не является публичной офертой</p>
-        </footer>
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="src/images/brands/lenovo.png"></div>
+                <div class="swiper-slide"><img src="src/images/brands/samsung.png"></div>
+                <div class="swiper-slide"><img src="src/images/brands/apple.png"></div>
+                <div class="swiper-slide"><img src="src/images/brands/bosch.png"></div>
+                <div class="swiper-slide"><img src="src/images/brands/hp.png"></div>
+                <div class="swiper-slide"><img src="src/images/brands/acer.png"></div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
     </main>
+
+    <footer>
+        <p>© 2019 CPS<br>Разработано командой Apesong</p>
+        <p>Политика конфиденциальности</p>
+        <p>Информация, размещенная на данной странице, не является публичной офертой</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="src/main.js"></script>
+    
 </body>
 </html>
