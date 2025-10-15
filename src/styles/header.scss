@@ -26,6 +26,20 @@ body {width: 100%; background-color: #F8F8F8;}
             display: flex;
             justify-content: center;
             align-items: center;
+
+            &--hidden{
+                display: none;
+                @media (min-width: 768px) {
+                    display: block;
+                    background-color: #FF3E79;
+                    height: 40px;
+                    width: 40px;
+                    border-radius: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
         }
 
         &--logo{
@@ -34,12 +48,25 @@ body {width: 100%; background-color: #F8F8F8;}
             display: flex;
             justify-content: center;
             align-items: center;
+            @media (min-width: 768px) {
+                margin-right: 250px ;
+            }
         }
 
         &--divider{
             width: 2px;
             height: 32px;
             background-color: #EAEAEA;
+
+            &--hidden{
+                display: none;
+                @media (min-width: 768px) {
+                    display: block;
+                    width: 2px;
+                    height: 32px;
+                    background-color: #EAEAEA;
+                }
+            }
         }
     }
 }

@@ -10,11 +10,15 @@
 <body>
     <header class="header">
         <ul class="header__navigation">
-            <li class="header__navigation--link"><img src="src/images/burger.svg"></li>
-            <li class="header__navigation--logo"><img src="src/images/logo.svg"></li>
+            <li class="header__navigation--link"><img src="src/images/header/burger.svg"></li>
+            <li class="header__navigation--divider--hidden"></li>
+            <li class="header__navigation--logo"><img src="src/images/header/logo.svg"></li>
+            <li class="header__navigation--link--hidden"><img src="src/images/header/phone.png"></li>
+            <li class="header__navigation--link--hidden"><img src="src/images/header/message.png"></li>
+            <li class="header__navigation--link--hidden"><img src="src/images/header/user.png"></li>
             <li class="header__navigation--divider"></li>
-            <li class="header__navigation--link"><img src="src/images/repair.svg"></li>
-            <li class="header__navigation--link"><img src="src/images/checkstatus.svg"></li>
+            <li class="header__navigation--link"><img src="src/images/header/repair.svg"></li>
+            <li class="header__navigation--link"><img src="src/images/header/checkstatus.svg"></li>
         </ul>
     </header>
     <main>
@@ -27,42 +31,50 @@
             <button class="slideMenu__button">Специальные цены</button>
         </div>
         <section class="firstBlock">
-            <p class="firstBlock__text">Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
-            <div class="firstBlock__more"><img src="src/images/more.png" class="firstBlock__more--pic">
-                <h2 class="firstBlock__more--name">Читать далее</h2>
+            <div>
+                <p class="firstBlock__text">Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
+                <p class="firstBlock__text--hidden">Мы успешно работаем с 1992 года и заслужили репутацию надёжного партнера</p>
+                <div class="firstBlock__more"><img src="src/images/more.png" class="firstBlock__more--pic">
+                    <h2 class="firstBlock__more--name">Читать далее</h2>
+                </div>
             </div>
-            <img src="src/images/cps.png" class="firstBlock__image">
+            <div>
+                <img src="src/images/cps.png" class="firstBlock__image">
+            </div>
         </section>
-        <section class="swiper brands">
+        <section class="brands">
             <div class="brands__head">
                 <p class="brands__head--text">РЕМОНТ ТЕХНИКИ РАЗЛИЧНЫХ БРЕНДОВ</p>
             </div>
-            <div class="swiper-wrapper brands__cats">
-                <div class="swiper-slide brands__cats--brand">
+            <div class="brands__cats">
+                <div class="brands__cats--brand">
                     <img src="src/images/brands/lenovo.png" class="brands__cats--brand--logo">
                     <button class="brands__cats--brand--btn"><img src="src/images/dropdown.png" class="brands__cats--btn--icon"></button>
                 </div>
-                <div class="swiper-slide brands__cats--brand">
+                <div class="brands__cats--brand">
                     <img src="src/images/brands/samsung.png" class="brands__cats--brand--logo">
                     <button class="brands__cats--brand--btn"><img src="src/images/dropdown.png" class="brands__cats--brand--btn--icon"></button>
                 </div>
-                <div class="swiper-slide brands__cats--brand">
+                <div class="brands__cats--brand">
                     <img src="src/images/brands/apple.png" class="brands__cats--brand--logo">
                     <button class="brands__cats--brand--btn"><img src="src/images/dropdown.png" class="brands__cats--brand--btn--icon"></button>
                 </div>
-                <div class="swiper-slide brands__cats--brand">
+                <div class="brands__cats--brand">
                     <img src="src/images/brands/bosch.png" class="brands__cats--brand--logo">
                     <button class="brands__cats--brand--btn"><img src="src/images/dropdown.png" class="brands__cats--brand--btn--icon"></button>
                 </div>
-                <div class="swiper-slide brands__cats--brand">
+                <div class="brands__cats--brand">
                     <img src="src/images/brands/hp.png" class="brands__cats--brand--logo">
                     <button class="brands__cats--brand--btn"><img src="src/images/dropdown.png" class="brands__cats--brand--btn--icon"></button>
                 </div>
-                <div class="swiper-slide brands__cats--brand">
+                <div class="brands__cats--brand">
                     <img src="src/images/brands/acer.png" class="brands__cats--brand--logo">
                     <button class="brands__cats--brand--btn"><img src="src/images/dropdown.png" class="brands__cats--brand--btn--icon"></button>
                 </div>
             </div>
+            <div class="brands__more"><img src="src/images/more.png" class="brands__more--pic">
+                    <h2 class="brands__more--name">Читать далее</h2>
+                </div>
             <div class="swiper-pagination"></div> 
         </section>
         
@@ -133,18 +145,6 @@
                 
             </div>
         </section>
-        
-        <div class="swiper">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide"><img src="src/images/brands/lenovo.png"></div>
-                <div class="swiper-slide"><img src="src/images/brands/samsung.png"></div>
-                <div class="swiper-slide"><img src="src/images/brands/apple.png"></div>
-                <div class="swiper-slide"><img src="src/images/brands/bosch.png"></div>
-                <div class="swiper-slide"><img src="src/images/brands/hp.png"></div>
-                <div class="swiper-slide"><img src="src/images/brands/acer.png"></div>
-            </div>
-            <div class="swiper-pagination"></div>
-        </div>
     </main>
 
     <footer>
