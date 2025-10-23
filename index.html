@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CPS</title>
     <link rel="stylesheet" href="src/global.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
 </head>
 <body>
     <header class="header">
@@ -13,6 +16,8 @@
             <li class="header__navigation--link"><img src="src/images/header/burger.svg"></li>
             <li class="header__navigation--divider--hidden"></li>
             <li class="header__navigation--logo"><img src="src/images/header/logo.svg"></li>
+        </ul>
+        <ul class="header__navigation--right-side">
             <li class="header__navigation--link--hidden"><img src="src/images/header/phone.png"></li>
             <li class="header__navigation--link--hidden"><img src="src/images/header/message.png"></li>
             <li class="header__navigation--link--hidden"><img src="src/images/header/user.png"></li>
@@ -20,6 +25,7 @@
             <li class="header__navigation--link"><img src="src/images/header/repair.svg"></li>
             <li class="header__navigation--link"><img src="src/images/header/checkstatus.svg"></li>
         </ul>
+
     </header>
     <main>
         <div class="title"><div class="title__highlight"></div><h1 class="title__services">Услуги и сервисы</h1></div>
@@ -72,10 +78,10 @@
                     <button class="brands__cats--brand--btn"><img src="src/images/dropdown.png" class="brands__cats--brand--btn--icon"></button>
                 </div>
             </div>
-            <div class="brands__more"><img src="src/images/more.png" class="brands__more--pic">
-                    <h2 class="brands__more--name">Читать далее</h2>
-                </div>
-            <div class="swiper-pagination"></div> 
+            <div class="brands__more">
+                <img src="src/images/more.png" class="brands__more--pic">
+                <h2 class="brands__more--name">Показать все</h2>
+            </div>
         </section>
         
         <section class="equipment">
@@ -100,6 +106,9 @@
                     <button class="equipment__cats--name--btn"><img src="src/images/dropdown.png" class="equipment__cats--name--btn--icon"></button>
                 </div>
             </div>
+            <div class="equipment__more"><img src="src/images/more.png" class="equipment__more--pic">
+                    <h2 class="equipment__more--name">Показать все</h2>
+                </div>
             <div class="swiper-pagination"></div> 
         </section>
 
@@ -137,23 +146,136 @@
                         <h3 class="prices__cats--name--group--maintext">30-120 мин<button class="prices__cats--name--group--btn">ЗАКАЗАТЬ<img src="src/images/dropdown.svg"></button></h3>
                     </div>
                 </div>
+                <div class="prices__cats--name">
+                    <div class="prices__cats--name--group">
+                        <p class="prices__cats--name--group--text">Ремонтные услуги</p>
+                        <h3 class="prices__cats--name--group--maintext">Замена дисплея</h3>
+                    </div>
+                    <div class="prices__cats--name--group">
+                        <p class="prices__cats--name--group--text">Цена</p>
+                        <h3 class="prices__cats--name--group--maintext">1000₽</h3>
+                    </div>
+                    <div class="prices__cats--name--group">
+                        <p class="prices__cats--name--group--text">Срок</p>
+                        <h3 class="prices__cats--name--group--maintext">30-120 мин<button class="prices__cats--name--group--btn">ЗАКАЗАТЬ<img src="src/images/dropdown.svg"></button></h3>
+                    </div>
+                </div>
+                <div class="prices__cats--name">
+                    <div class="prices__cats--name--group">
+                        <p class="prices__cats--name--group--text">Ремонтные услуги</p>
+                        <h3 class="prices__cats--name--group--maintext">Замена полифонического <br>динамика</h3>
+                    </div>
+                    <div class="prices__cats--name--group">
+                        <p class="prices__cats--name--group--text">Цена</p>
+                        <h3 class="prices__cats--name--group--maintext">1000₽</h3>
+                    </div>
+                    <div class="prices__cats--name--group">
+                        <p class="prices__cats--name--group--text">Срок</p>
+                        <h3 class="prices__cats--name--group--maintext">30-120 мин<button class="prices__cats--name--group--btn">ЗАКАЗАТЬ<img src="src/images/dropdown.svg"></button></h3>
+                    </div>
+                </div>
+                <div class="prices__cats--name">
+                    <div class="prices__cats--name--group">
+                        <p class="prices__cats--name--group--text">Ремонтные услуги</p>
+                        <h3 class="prices__cats--name--group--maintext">Замена программного <br>обеспечения</h3>
+                    </div>
+                    <div class="prices__cats--name--group">
+                        <p class="prices__cats--name--group--text">Цена</p>
+                        <h3 class="prices__cats--name--group--maintext">1000₽</h3>
+                    </div>
+                    <div class="prices__cats--name--group">
+                        <p class="prices__cats--name--group--text">Срок</p>
+                        <h3 class="prices__cats--name--group--maintext">30-120 мин<button class="prices__cats--name--group--btn">ЗАКАЗАТЬ<img src="src/images/dropdown.svg"></button></h3>
+                    </div>
+                </div>
             </div>
-
+            <table class="prices__table">
+            <thead class="prices__table--column-names">
+                <tr class="prices__table--row">
+                    <th class="prices__table--row--cell--first">Ремонтные услуги</th>
+                    <th class="prices__table--row--cell">Цена</th>
+                    <th class="prices__table--row--cell">Срок</th>
+                    <th class="prices__table--row--cell"></th>
+                </tr>
+            </thead>
+            <tbody class="prices__table--content">
+                <tr class="prices__table--row">
+                    <td class="prices__table--row--cell--first">Диагностика</td>
+                    <td class="prices__table--row--cell">Бесплатно</td>
+                    <td class="prices__table--row--cell">30 мин</td>
+                    <td class="prices__table--row--cell"><button class="prices__cats--name--group--btn">ЗАКАЗАТЬ<img src="src/images/dropdown.svg"></button></td>
+                </tr>
+                <tr class="prices__table--row">
+                    <td class="prices__table--row--cell--first">Замена дисплея</td>
+                    <td class="prices__table--row--cell">1000₽</td>
+                    <td class="prices__table--row--cell">30-120 мин</td>
+                    <td class="prices__table--row--cell"><button class="prices__cats--name--group--btn">ЗАКАЗАТЬ<img src="src/images/dropdown.svg"></button></td>
+                </tr>
+                <tr class="prices__table--row">
+                    <td class="prices__table--row--cell--first">Замена полифонического динамика</td>
+                    <td class="prices__table--row--cell">1000₽</td>
+                    <td class="prices__table--row--cell">30-120 мин</td>
+                    <td class="prices__table--row--cell"><button class="prices__cats--name--group--btn">ЗАКАЗАТЬ<img src="src/images/dropdown.svg"></button></td>
+                </tr>
+                <tr class="prices__table--row">
+                    <td class="prices__table--row--cell--first">Тестирование с выдачей технического заключения</td>
+                    <td class="prices__table--row--cell">1000₽</td>
+                    <td class="prices__table--row--cell">30-120 мин</td>
+                    <td class="prices__table--row--cell"><button class="prices__cats--name--group--btn">ЗАКАЗАТЬ<img src="src/images/dropdown.svg"></button></td>
+                </tr>
+                <tr class="prices__table--row">
+                    <td class="prices__table--row--cell--first">Замена программного обеспечения</td>
+                    <td class="prices__table--row--cell">1000₽</td>
+                    <td class="prices__table--row--cell">30-120 мин</td>
+                    <td class="prices__table--row--cell"><button class="prices__cats--name--group--btn">ЗАКАЗАТЬ<img src="src/images/dropdown.svg"></button></td>
+                </tr>
+            </tbody>
+            </table>
             <div class="prices__bottom">
                 <p class="prices__bottom--text">Все цены указаны с учетом НДС. Стоимость ремонта указана на единичную услугу. Для получения коммерческого предложения на постоянное обслуживание, оставьте заявку.</p>
-                <h4 class="prices__bottom--group">Получить коммерческое<br>предложение<img src="src/images/dropdown.png" class="prices__bottom--group--dropdown"></h4>
+                <h4 class="prices__bottom--group">Получить коммерческое <br class="hidden">предложение<img src="src/images/dropdown.png" class="prices__bottom--group--dropdown"></h4>
                 
             </div>
         </section>
+
+        <div class="swiper-container brands">
+            <div class="swiper-wrapper brands__cats">
+                <div class="swiper-slide brands__cats--brand">
+                    <img src="src/images/brands/lenovo.png" class="brands__cats--brand--logo">
+                    <button class="brands__cats--brand--btn"><img src="src/images/dropdown.png" class="brands__cats--btn--icon"></button>
+                </div>
+                <div class="swiper-slide brands__cats--brand">
+                    <img src="src/images/brands/samsung.png" class="brands__cats--brand--logo">
+                    <button class="brands__cats--brand--btn"><img src="src/images/dropdown.png" class="brands__cats--brand--btn--icon"></button>
+                </div>
+                <div class="swiper-slide brands__cats--brand">
+                    <img src="src/images/brands/apple.png" class="brands__cats--brand--logo">
+                    <button class="brands__cats--brand--btn"><img src="src/images/dropdown.png" class="brands__cats--brand--btn--icon"></button>
+                </div>
+                <div class="swiper-slide brands__cats--brand">
+                    <img src="src/images/brands/bosch.png" class="brands__cats--brand--logo">
+                    <button class="brands__cats--brand--btn"><img src="src/images/dropdown.png" class="brands__cats--brand--btn--icon"></button>
+                </div>
+                <div class="swiper-slide brands__cats--brand">
+                    <img src="src/images/brands/hp.png" class="brands__cats--brand--logo">
+                    <button class="brands__cats--brand--btn"><img src="src/images/dropdown.png" class="brands__cats--brand--btn--icon"></button>
+                </div>
+                <div class="swiper-slide brands__cats--brand">
+                    <img src="src/images/brands/acer.png" class="brands__cats--brand--logo">
+                    <button class="brands__cats--brand--btn"><img src="src/images/dropdown.png" class="brands__cats--brand--btn--icon"></button>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div> 
+        </div>
     </main>
 
     <footer>
-        <p>© 2019 CPS<br>Разработано командой Apesong</p>
-        <p>Политика конфиденциальности</p>
-        <p>Информация, размещенная на данной странице, не является публичной офертой</p>
+        <p class="p-one">© 2019 CPS<br>Разработано командой Apesong</p>
+        <p class="p-two">Политика конфиденциальности</p>
+        <p class="p-three">Информация, размещенная на данной странице, не является публичной офертой</p>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="src/main.js"></script>
     
 </body>

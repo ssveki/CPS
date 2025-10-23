@@ -1,13 +1,13 @@
 body {width: 100%; background-color: #F8F8F8;}
 
 .header {
-    width: 100%;
     height: 88px;
     background-color: #fff;
     border-bottom: solid 1px #D9FFF5;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    padding: 0px 8px;
 
     &__navigation {
         list-style-type: none;
@@ -17,6 +17,10 @@ body {width: 100%; background-color: #F8F8F8;}
         justify-content: space-between;
         padding-left: 16px;
         padding-right: 16px;
+        &--right-side{
+            display: flex;
+            gap: 8px;
+        }
 
         &--link {
             background-color: #FF3E79;
@@ -57,6 +61,7 @@ body {width: 100%; background-color: #F8F8F8;}
             width: 2px;
             height: 32px;
             background-color: #EAEAEA;
+            list-style-type: none;
 
             &--hidden{
                 display: none;
