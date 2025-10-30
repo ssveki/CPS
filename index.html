@@ -11,9 +11,40 @@
     />
 </head>
 <body>
+    <menu class="sideMenu">
+        <ul class="sideMenu__head">
+            <div class="sideMenu__head--group">
+            <li class="sideMenu__head--icon close-btn"><img src="src/images/close.png"></li>
+            <li class="sideMenu__head--logo"><img src="src/images/header/logo.svg"></li>
+            </div>
+            <li class="sideMenu__head--icon"><img src="src/images/search.png"></li>
+        </ul>
+        <ul class="sideMenu__list">
+            <li class="sideMenu__list--chapter--active"><div class="title__highlight"></div>Ремонт техники</li>
+            <li class="sideMenu__list--chapter">Услуги и сервисы</li>
+            <li class="sideMenu__list--chapter">Корпоративным клиентам</li>
+            <li class="sideMenu__list--chapter">Продавцам техники</li>
+            <li class="sideMenu__list--chapter">Партнерам</li>
+            <li class="sideMenu__list--chapter">Производителям</li>
+            <li class="sideMenu__list--chapter">Наши сервисные центры</li>
+            <li class="sideMenu__list--chapter">Контакты</li>
+        </ul>
+        <ul class="sideMenu__connect">
+            <li class="sideMenu__connect--icon header__navigation--link"><img src="src/images/header/phone.png"></li>
+            <li class="sideMenu__connect--icon header__navigation--link"><img src="src/images/header/message.png"></li>
+            <li class="sideMenu__connect--icon header__navigation--link"><img src="src/images/header/user.png"></li>
+        </ul>
+        <div class="sideMenu__contacts">
+            <p class="sideMenu__contacts--mail">mail@cps.com</p>
+            <h1 class="sideMenu__contacts--phone">8 800 890 8900</h1>
+            <div class="sideMenu__contacts--language">
+                <p class="sideMenu__contacts--language--name--active">RU</p><p class="sideMenu__contacts--language--name">EN</p><p class="sideMenu__contacts--language--name">CH</p>
+            </div>
+        </div>
+    </menu>
     <header class="header">
         <ul class="header__navigation">
-            <li class="header__navigation--link"><img src="src/images/header/burger.svg"></li>
+            <li class="header__navigation--link burger"><img src="src/images/header/burger.svg"></li>
             <li class="header__navigation--divider--hidden"></li>
             <li class="header__navigation--logo"><img src="src/images/header/logo.svg"></li>
         </ul>
@@ -35,6 +66,7 @@
             <button class="slideMenu__button">Цены на услуги</button>
             <button class="slideMenu__button">Адреса сервисных центров</button>
             <button class="slideMenu__button">Специальные цены</button>
+            <button class="slideMenu__button">Отзывы</button>
         </div>
         <section class="firstBlock">
             <div>
@@ -91,19 +123,19 @@
             <div class="equipment__cats">
                 <div class="equipment__cats--name">
                     <h3 class="equipment__cats--name--text">Ремонт ноутбуков</h3>
-                    <button class="equipment__cats--name--btn"><img src="src/images/dropdown.png" class="equipment__cats--btn--icon"></button>
+                    <button class="equipment__cats--name--btn"><img src="src/images/dropdown.png"></button>
                 </div>
                 <div class="equipment__cats--name">
                     <h3 class="equipment__cats--name--text">Ремонт планшетов</h3>
-                    <button class="equipment__cats--name--btn"><img src="src/images/dropdown.png" class="equipment__cats--name--btn--icon"></button>
+                    <button class="equipment__cats--name--btn"><img src="src/images/dropdown.png"></button>
                 </div>
                 <div class="equipment__cats--name">
                     <h3 class="equipment__cats--name--text">Ремонт ПК</h3>
-                    <button class="equipment__cats--name--btn"><img src="src/images/dropdown.png" class="equipment__cats--name--btn--icon"></button>
+                    <button class="equipment__cats--name--btn"><img src="src/images/dropdown.png"></button>
                 </div>
                 <div class="equipment__cats--name">
                     <h3 class="equipment__cats--name--text">Ремонт мониторов</h3>
-                    <button class="equipment__cats--name--btn"><img src="src/images/dropdown.png" class="equipment__cats--name--btn--icon"></button>
+                    <button class="equipment__cats--name--btn"><img src="src/images/dropdown.png"></button>
                 </div>
             </div>
             <div class="equipment__more"><img src="src/images/more.png" class="equipment__more--pic">
@@ -237,7 +269,7 @@
                 
             </div>
         </section>
-
+        <!--
         <div class="swiper-container brands">
             <div class="swiper-wrapper brands__cats">
                 <div class="swiper-slide brands__cats--brand">
@@ -267,6 +299,7 @@
             </div>
             <div class="swiper-pagination"></div> 
         </div>
+        -->
     </main>
 
     <footer>

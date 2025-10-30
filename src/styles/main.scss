@@ -23,6 +23,91 @@ body {width: 100%; background-color: #F8F8F8;}
     padding: 0;
 }
 
+.sideMenu{
+    width: 320px;
+    height: 100%;
+    z-index: 1000;
+    top: 0; left: 0;
+    position: fixed;
+    background-color: #FFFFFF;
+    display: none;
+    &__head{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        list-style-type: none;
+        margin: 16px;
+        &--icon{
+            background-color: #FF3E79;
+            height: 40px;
+            width: 40px;
+            border-radius: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        &--group{
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+    }
+    &__list{
+        &--chapter{
+            color:#1B1C21;
+            font-size: 16px;
+            font-family: TTLakes;
+            margin: 24px 16px;
+            list-style-type: none;
+            &--active{
+                color:#7E7E82;
+                font-size: 16px;
+                font-family: TTLakes;
+                display: flex;
+                align-items: center;
+                gap: 12px;
+            }
+        }
+    }
+
+    &__connect{
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        margin-left: 16px;
+    }
+    &__contacts{
+        &--mail{
+            color: #1B1C21;
+            font-size: 16px;
+            margin: 16px
+        }
+        &--phone{
+            color: #1B1C21;
+            font-family: TTLakes-bold;
+            font-size: 24px;
+            margin-left: 16px;
+            font-weight: normal;
+            margin-bottom: 0;
+        }
+        &--language{
+            display: flex;
+            align-items: center;
+            font-size: 16px;
+            margin-left: 16px;
+            gap: 7px;
+            &--name{
+                color: #1B1C21;
+                margin-top: 8px;
+                &--active{
+                    color:#7E7E82;
+                    margin-top: 8px;
+                }
+            }
+        }
+    }
+}
+
 /* .hidden{
     display: none !important;
 }
@@ -117,9 +202,10 @@ body {width: 100%; background-color: #F8F8F8;}
     &__image{
         width: 320px;
         @media (min-width: 768px) {
-                width: 360px;
-                margin-right: 24px;
-            }
+            width: 360px;
+            margin-right: 24px;
+            border-radius: 6px;
+        }
     }
 }
 
@@ -150,12 +236,12 @@ body {width: 100%; background-color: #F8F8F8;}
         padding: 16px;
         gap: 16px;
         @media (min-width: 768px) {
-                display: flex;
-                flex-direction: row;
-                flex-wrap: wrap;
-                padding: 24px;
-                gap: 16px 24px;
-            }
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            padding: 24px;
+            gap: 16px 24px;
+        }
 
         &--brand{
             background-color: #FFFFFF;
@@ -407,12 +493,8 @@ table{
     display: block;
     width: 720px;
     margin: 24px;
+    border-collapse: collapse;
     }
-}
-
-tr{
-    padding-top: 23px;
-    padding-bottom: 23px;
 }
 
 td{
@@ -421,6 +503,13 @@ td{
     font-family: TTLakes;
     font-weight: normal;
     text-align:left;
+    padding: 16px;
+    padding-right: 0%;
+    border-collapse: collapse;
+    white-space: nowrap;
+    border-bottom: solid 1px #EAEAEA ;
+    letter-spacing: 0.2px;
+    line-height: 18px;
 }
 
 th{
@@ -429,9 +518,6 @@ th{
     font-family: TTLakes;
     font-weight: normal;
     text-align:left;
-}
-
-thead{
     padding: 16px;
 }
 
@@ -439,8 +525,13 @@ tbody{
     height: 324px;
     background-color: #FFFFFF;
     border: 0;
-    border-radius: 6px;
 }
+
+tbody tr:first-child td:first-child { border-top-left-radius: 6px; }
+tbody tr:first-child td:last-child { border-top-right-radius: 6px; }
+
+tbody tr:last-child td:first-child { border-bottom-left-radius: 6px; }
+tbody tr:last-child td:last-child { border-bottom-right-radius: 6px; }
 
 
 .hidden{
