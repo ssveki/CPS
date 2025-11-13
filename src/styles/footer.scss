@@ -13,11 +13,12 @@ footer{
     color: #7E7E82;
     font-family: TTLakes;
     font-size: 16px;
+    margin-bottom: 16px;
     @media (min-width: 768px) {
         display: flex;
         flex-direction: row;
         align-items: flex-start;
-        padding: 24px;
+        margin: 24px;
     }
 }
 

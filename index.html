@@ -5,56 +5,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CPS</title>
     <link rel="stylesheet" href="src/global.css">
+    <link rel="Icon" type="png" href="src/images/icons/logo.svg">
     <link
       rel="stylesheet"
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
 </head>
 <body>
+    <div class="overlay"></div>
     <menu class="sideMenu">
         <ul class="sideMenu__head">
             <div class="sideMenu__head--group">
-            <li class="sideMenu__head--icon close-btn"><img src="src/images/close.png"></li>
-            <li class="sideMenu__head--logo"><img src="src/images/header/logo.svg"></li>
+            <li class="sideMenu__head--icon close-btn"><img src="src/images/icons/close.png"></li>
+            <li class="sideMenu__head--logo"><img src="src/images/icons/logo.svg"></li>
             </div>
-            <li class="sideMenu__head--icon"><img src="src/images/search.png"></li>
+            <li class="sideMenu__head--icon"><img src="src/images/icons/search.png"></li>
         </ul>
-        <ul class="sideMenu__list">
-            <li class="sideMenu__list--chapter--active"><div class="title__highlight"></div>Ремонт техники</li>
-            <li class="sideMenu__list--chapter">Услуги и сервисы</li>
-            <li class="sideMenu__list--chapter">Корпоративным клиентам</li>
-            <li class="sideMenu__list--chapter">Продавцам техники</li>
-            <li class="sideMenu__list--chapter">Партнерам</li>
-            <li class="sideMenu__list--chapter">Производителям</li>
-            <li class="sideMenu__list--chapter">Наши сервисные центры</li>
-            <li class="sideMenu__list--chapter">Контакты</li>
-        </ul>
-        <ul class="sideMenu__connect">
-            <li class="sideMenu__connect--icon header__navigation--link"><img src="src/images/header/phone.png"></li>
-            <li class="sideMenu__connect--icon header__navigation--link"><img src="src/images/header/message.png"></li>
-            <li class="sideMenu__connect--icon header__navigation--link"><img src="src/images/header/user.png"></li>
-        </ul>
-        <div class="sideMenu__contacts">
-            <p class="sideMenu__contacts--mail">mail@cps.com</p>
-            <h1 class="sideMenu__contacts--phone">8 800 890 8900</h1>
-            <div class="sideMenu__contacts--language">
-                <p class="sideMenu__contacts--language--name--active">RU</p><p class="sideMenu__contacts--language--name">EN</p><p class="sideMenu__contacts--language--name">CH</p>
+        <div class="sideMenu__main">
+            <ul class="sideMenu__main--list">
+                <li class="sideMenu__main--list--chapter--active"><div class="title__highlight"></div>Ремонт техники</li>
+                <li class="sideMenu__main--list--chapter">Услуги и сервисы</li>
+                <li class="sideMenu__main--list--chapter">Корпоративным клиентам</li>
+                <li class="sideMenu__main--list--chapter">Продавцам техники</li>
+                <li class="sideMenu__main--list--chapter">Партнерам</li>
+                <li class="sideMenu__main--list--chapter">Производителям</li>
+                <li class="sideMenu__main--list--chapter">Наши сервисные центры</li>
+                <li class="sideMenu__main--list--chapter">Контакты</li>
+            </ul>
+            <div style="margin-left: 16px; @media (min-width: 768px){margin-left: 24px}">
+                <ul class="sideMenu__main--connect">
+                    <li class="sideMenu__main--connect--icon header__navigation--link"><img src="src/images/icons/phone.png"></li>
+                    <li class="sideMenu__main--connect--icon header__navigation--link"><img src="src/images/icons/message.png"></li>
+                    <li class="sideMenu__main--connect--icon header__navigation--link"><img src="src/images/icons/user.png"></li>
+                </ul>
+                <div class="sideMenu__main--contacts">
+                    <p class="sideMenu__main--contacts--mail">mail@cps.com</p>
+                    <h1 class="sideMenu__main--contacts--phone">8 800 890 8900</h1>
+                    <div class="sideMenu__main--contacts--language">
+                        <p class="sideMenu__main--contacts--language--name--active">RU</p><p class="sideMenu__main--contacts--language--name">EN</p><p class="sideMenu__main--contacts--language--name">CH</p>
+                    </div>
+                </div>
             </div>
         </div>
     </menu>
     <header class="header">
         <ul class="header__navigation">
-            <li class="header__navigation--link burger"><img src="src/images/header/burger.svg"></li>
+            <li class="header__navigation--link burger"><img src="src/images/icons/burger.svg"></li>
             <li class="header__navigation--divider--hidden"></li>
-            <li class="header__navigation--logo"><img src="src/images/header/logo.svg"></li>
+            <li class="header__navigation--logo"><img src="src/images/icons/logo.svg"></li>
         </ul>
         <ul class="header__navigation--right-side">
-            <li class="header__navigation--link--hidden"><img src="src/images/header/phone.png"></li>
-            <li class="header__navigation--link--hidden"><img src="src/images/header/message.png"></li>
-            <li class="header__navigation--link--hidden"><img src="src/images/header/user.png"></li>
+            <li class="header__navigation--link--hidden"><img src="src/images/icons/phone.png"></li>
+            <li class="header__navigation--link--hidden"><img src="src/images/icons/message.png"></li>
+            <li class="header__navigation--link--hidden"><img src="src/images/icons/user.png"></li>
             <li class="header__navigation--divider"></li>
-            <li class="header__navigation--link"><img src="src/images/header/repair.svg"></li>
-            <li class="header__navigation--link"><img src="src/images/header/checkstatus.svg"></li>
+            <li class="header__navigation--link"><img src="src/images/icons/repair.svg"></li>
+            <li class="header__navigation--link"><img src="src/images/icons/checkstatus.svg"></li>
         </ul>
 
     </header>
@@ -71,13 +77,13 @@
         <section class="firstBlock">
             <div>
                 <p class="firstBlock__text">Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
-                <p class="firstBlock__text--hidden">Мы успешно работаем с 1992 года и заслужили репутацию надёжного партнера</p>
-                <div class="firstBlock__more"><img src="src/images/more.png" class="firstBlock__more--pic">
+                <p class="firstBlock__text--hidden">Мы успешно работаем с 1992 года и заслужили репутацию надёжного партнера. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</p>
+                <div class="firstBlock__more"><img src="src/images/icons/more.png" class="firstBlock__more--pic">
                     <h2 class="firstBlock__more--name">Читать далее</h2>
                 </div>
             </div>
             <div>
-                <img src="src/images/cps.png" class="firstBlock__image">
+                <img src="src/images/icons/cps.png" class="firstBlock__image">
             </div>
         </section>
         <section class="brands">
@@ -87,31 +93,39 @@
             <div class="brands__cats">
                 <div class="brands__cats--brand">
                     <img src="src/images/brands/lenovo.png" class="brands__cats--brand--logo">
-                    <button class="brands__cats--brand--btn"><img src="src/images/dropdown.png" class="brands__cats--btn--icon"></button>
+                    <button class="brands__cats--brand--btn"><img src="src/images/icons/dropdown.png" class="brands__cats--btn--icon"></button>
                 </div>
                 <div class="brands__cats--brand">
                     <img src="src/images/brands/samsung.png" class="brands__cats--brand--logo">
-                    <button class="brands__cats--brand--btn"><img src="src/images/dropdown.png" class="brands__cats--brand--btn--icon"></button>
+                    <button class="brands__cats--brand--btn"><img src="src/images/icons/dropdown.png" class="brands__cats--brand--btn--icon"></button>
                 </div>
                 <div class="brands__cats--brand">
                     <img src="src/images/brands/apple.png" class="brands__cats--brand--logo">
-                    <button class="brands__cats--brand--btn"><img src="src/images/dropdown.png" class="brands__cats--brand--btn--icon"></button>
+                    <button class="brands__cats--brand--btn"><img src="src/images/icons/dropdown.png" class="brands__cats--brand--btn--icon"></button>
+                </div>
+                <div class="brands__cats--brand hidden">
+                    <img src="src/images/brands/viewsonic.png" class="brands__cats--brand--logo">
+                    <button class="brands__cats--brand--btn"><img src="src/images/icons/dropdown.png" class="brands__cats--brand--btn--icon"></button>
                 </div>
                 <div class="brands__cats--brand">
                     <img src="src/images/brands/bosch.png" class="brands__cats--brand--logo">
-                    <button class="brands__cats--brand--btn"><img src="src/images/dropdown.png" class="brands__cats--brand--btn--icon"></button>
+                    <button class="brands__cats--brand--btn"><img src="src/images/icons/dropdown.png" class="brands__cats--brand--btn--icon"></button>
                 </div>
                 <div class="brands__cats--brand">
                     <img src="src/images/brands/hp.png" class="brands__cats--brand--logo">
-                    <button class="brands__cats--brand--btn"><img src="src/images/dropdown.png" class="brands__cats--brand--btn--icon"></button>
+                    <button class="brands__cats--brand--btn"><img src="src/images/icons/dropdown.png" class="brands__cats--brand--btn--icon"></button>
                 </div>
                 <div class="brands__cats--brand">
                     <img src="src/images/brands/acer.png" class="brands__cats--brand--logo">
-                    <button class="brands__cats--brand--btn"><img src="src/images/dropdown.png" class="brands__cats--brand--btn--icon"></button>
+                    <button class="brands__cats--brand--btn"><img src="src/images/icons/dropdown.png" class="brands__cats--brand--btn--icon"></button>
+                </div>
+                <div class="brands__cats--brand hidden">
+                    <img src="src/images/brands/sony.svg" class="brands__cats--brand--logo">
+                    <button class="brands__cats--brand--btn"><img src="src/images/icons/dropdown.png" class="brands__cats--brand--btn--icon"></button>
                 </div>
             </div>
             <div class="brands__more">
-                <img src="src/images/more.png" class="brands__more--pic">
+                <img src="src/images/icons/more.png" class="brands__more--pic">
                 <h2 class="brands__more--name">Показать все</h2>
             </div>
         </section>
@@ -123,22 +137,22 @@
             <div class="equipment__cats">
                 <div class="equipment__cats--name">
                     <h3 class="equipment__cats--name--text">Ремонт ноутбуков</h3>
-                    <button class="equipment__cats--name--btn"><img src="src/images/dropdown.png"></button>
+                    <button class="equipment__cats--name--btn"><img src="src/images/icons/dropdown.png"></button>
                 </div>
                 <div class="equipment__cats--name">
                     <h3 class="equipment__cats--name--text">Ремонт планшетов</h3>
-                    <button class="equipment__cats--name--btn"><img src="src/images/dropdown.png"></button>
+                    <button class="equipment__cats--name--btn"><img src="src/images/icons/dropdown.png"></button>
                 </div>
                 <div class="equipment__cats--name">
                     <h3 class="equipment__cats--name--text">Ремонт ПК</h3>
-                    <button class="equipment__cats--name--btn"><img src="src/images/dropdown.png"></button>
+                    <button class="equipment__cats--name--btn"><img src="src/images/icons/dropdown.png"></button>
                 </div>
                 <div class="equipment__cats--name">
                     <h3 class="equipment__cats--name--text">Ремонт мониторов</h3>
-                    <button class="equipment__cats--name--btn"><img src="src/images/dropdown.png"></button>
+                    <button class="equipment__cats--name--btn"><img src="src/images/icons/dropdown.png"></button>
                 </div>
             </div>
-            <div class="equipment__more"><img src="src/images/more.png" class="equipment__more--pic">
+            <div class="equipment__more"><img src="src/images/icons/more.png" class="equipment__more--pic">
                     <h2 class="equipment__more--name">Показать все</h2>
                 </div>
             <div class="swiper-pagination"></div> 
@@ -160,7 +174,7 @@
                     </div>
                     <div class="prices__cats--name--group">
                         <p class="prices__cats--name--group--text">Срок</p>
-                        <h3 class="prices__cats--name--group--maintext">30-120 мин<button class="prices__cats--name--group--btn">ЗАКАЗАТЬ<img src="src/images/dropdown.svg"></button></h3>
+                        <h3 class="prices__cats--name--group--maintext">30-120 мин<button class="prices__cats--name--group--btn">ЗАКАЗАТЬ<img src="src/images/icons/dropdown.svg"></button></h3>
                         
                     </div>
                 </div>
@@ -175,7 +189,7 @@
                     </div>
                     <div class="prices__cats--name--group">
                         <p class="prices__cats--name--group--text">Срок</p>
-                        <h3 class="prices__cats--name--group--maintext">30-120 мин<button class="prices__cats--name--group--btn">ЗАКАЗАТЬ<img src="src/images/dropdown.svg"></button></h3>
+                        <h3 class="prices__cats--name--group--maintext">30-120 мин<button class="prices__cats--name--group--btn">ЗАКАЗАТЬ<img src="src/images/icons/dropdown.svg"></button></h3>
                     </div>
                 </div>
                 <div class="prices__cats--name">
@@ -189,7 +203,7 @@
                     </div>
                     <div class="prices__cats--name--group">
                         <p class="prices__cats--name--group--text">Срок</p>
-                        <h3 class="prices__cats--name--group--maintext">30-120 мин<button class="prices__cats--name--group--btn">ЗАКАЗАТЬ<img src="src/images/dropdown.svg"></button></h3>
+                        <h3 class="prices__cats--name--group--maintext">30-120 мин<button class="prices__cats--name--group--btn">ЗАКАЗАТЬ<img src="src/images/icons/dropdown.svg"></button></h3>
                     </div>
                 </div>
                 <div class="prices__cats--name">
@@ -203,7 +217,7 @@
                     </div>
                     <div class="prices__cats--name--group">
                         <p class="prices__cats--name--group--text">Срок</p>
-                        <h3 class="prices__cats--name--group--maintext">30-120 мин<button class="prices__cats--name--group--btn">ЗАКАЗАТЬ<img src="src/images/dropdown.svg"></button></h3>
+                        <h3 class="prices__cats--name--group--maintext">30-120 мин<button class="prices__cats--name--group--btn">ЗАКАЗАТЬ<img src="src/images/icons/dropdown.svg"></button></h3>
                     </div>
                 </div>
                 <div class="prices__cats--name">
@@ -217,7 +231,7 @@
                     </div>
                     <div class="prices__cats--name--group">
                         <p class="prices__cats--name--group--text">Срок</p>
-                        <h3 class="prices__cats--name--group--maintext">30-120 мин<button class="prices__cats--name--group--btn">ЗАКАЗАТЬ<img src="src/images/dropdown.svg"></button></h3>
+                        <h3 class="prices__cats--name--group--maintext">30-120 мин<button class="prices__cats--name--group--btn">ЗАКАЗАТЬ<img src="src/images/icons/dropdown.svg"></button></h3>
                     </div>
                 </div>
             </div>
@@ -235,37 +249,37 @@
                     <td class="prices__table--row--cell--first">Диагностика</td>
                     <td class="prices__table--row--cell">Бесплатно</td>
                     <td class="prices__table--row--cell">30 мин</td>
-                    <td class="prices__table--row--cell"><button class="prices__cats--name--group--btn">ЗАКАЗАТЬ<img src="src/images/dropdown.svg"></button></td>
+                    <td class="prices__table--row--cell"><button class="prices__cats--name--group--btn">ЗАКАЗАТЬ<img src="src/images/icons/dropdown.svg"></button></td>
                 </tr>
                 <tr class="prices__table--row">
                     <td class="prices__table--row--cell--first">Замена дисплея</td>
                     <td class="prices__table--row--cell">1000₽</td>
                     <td class="prices__table--row--cell">30-120 мин</td>
-                    <td class="prices__table--row--cell"><button class="prices__cats--name--group--btn">ЗАКАЗАТЬ<img src="src/images/dropdown.svg"></button></td>
+                    <td class="prices__table--row--cell"><button class="prices__cats--name--group--btn">ЗАКАЗАТЬ<img src="src/images/icons/dropdown.svg"></button></td>
                 </tr>
                 <tr class="prices__table--row">
                     <td class="prices__table--row--cell--first">Замена полифонического динамика</td>
                     <td class="prices__table--row--cell">1000₽</td>
                     <td class="prices__table--row--cell">30-120 мин</td>
-                    <td class="prices__table--row--cell"><button class="prices__cats--name--group--btn">ЗАКАЗАТЬ<img src="src/images/dropdown.svg"></button></td>
+                    <td class="prices__table--row--cell"><button class="prices__cats--name--group--btn">ЗАКАЗАТЬ<img src="src/images/icons/dropdown.svg"></button></td>
                 </tr>
                 <tr class="prices__table--row">
                     <td class="prices__table--row--cell--first">Тестирование с выдачей технического заключения</td>
                     <td class="prices__table--row--cell">1000₽</td>
                     <td class="prices__table--row--cell">30-120 мин</td>
-                    <td class="prices__table--row--cell"><button class="prices__cats--name--group--btn">ЗАКАЗАТЬ<img src="src/images/dropdown.svg"></button></td>
+                    <td class="prices__table--row--cell"><button class="prices__cats--name--group--btn">ЗАКАЗАТЬ<img src="src/images/icons/dropdown.svg"></button></td>
                 </tr>
                 <tr class="prices__table--row">
                     <td class="prices__table--row--cell--first">Замена программного обеспечения</td>
                     <td class="prices__table--row--cell">1000₽</td>
                     <td class="prices__table--row--cell">30-120 мин</td>
-                    <td class="prices__table--row--cell"><button class="prices__cats--name--group--btn">ЗАКАЗАТЬ<img src="src/images/dropdown.svg"></button></td>
+                    <td class="prices__table--row--cell"><button class="prices__cats--name--group--btn">ЗАКАЗАТЬ<img src="src/images/icons/dropdown.svg"></button></td>
                 </tr>
             </tbody>
             </table>
             <div class="prices__bottom">
                 <p class="prices__bottom--text">Все цены указаны с учетом НДС. Стоимость ремонта указана на единичную услугу. Для получения коммерческого предложения на постоянное обслуживание, оставьте заявку.</p>
-                <h4 class="prices__bottom--group">Получить коммерческое <br class="hidden">предложение<img src="src/images/dropdown.png" class="prices__bottom--group--dropdown"></h4>
+                <h4 class="prices__bottom--group">Получить коммерческое <br class="enter">предложение<img src="src/images/icons/dropdown.png" class="prices__bottom--group--dropdown"></h4>
                 
             </div>
         </section>

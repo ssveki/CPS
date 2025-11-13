@@ -1,0 +1,113 @@
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.9);
+    z-index: 999;
+}
+
+.sideMenu{
+    width: 320px;
+    height: 100%;
+    z-index: 1000;
+    top: 0; left: 0;
+    position: fixed;
+    background-color: #FFFFFF;
+    display: none;
+    box-shadow: 16px 0 52px rgba(14, 24, 80, 0.2);
+    &__head{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        list-style-type: none;
+        margin: 16px;
+        &--icon{
+            background-color: #FF3E79;
+            height: 40px;
+            width: 40px;
+            border-radius: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        &--group{
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+    }
+    &__main{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        &--list{
+            &--chapter{
+                color:#1B1C21;
+                font-size: 16px;
+                font-family: TTLakes;
+                margin: 24px 16px;
+                list-style-type: none;
+                @media (min-width: 768px){
+                    margin: 32px 24px;
+                }
+                &--active{
+                    color:#7E7E82;
+                    font-size: 16px;
+                    font-family: TTLakes;
+                    display: flex;
+                    align-items: center;
+                    gap: 12px;
+                    @media (min-width: 768px){
+                        gap: 20px;
+                        margin-bottom: 28px;
+                    }
+                }
+            }
+        }
+
+        &--connect{
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+        &--contacts{
+            &--mail{
+                color: #1B1C21;
+                font-size: 16px;
+            }
+            &--phone{
+                color: #1B1C21;
+                font-family: TTLakes-bold;
+                font-size: 24px;
+                font-weight: normal;
+                margin-bottom: 0;
+            }
+            &--language{
+                display: flex;
+                align-items: center;
+                font-size: 16px;
+                gap: 7px;
+                &--name{
+                    color: #1B1C21;
+                    margin-top: 8px;
+                    &--active{
+                        color:#7E7E82;
+                        margin-top: 8px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1440px) {
+    .sideMenu {display: block; box-shadow: none;}
+    .overlay {display: none;}
+    .burger {display: none;}
+    main {margin-left: 320px;}
+    footer {margin-left: 352px;}
+    .close-btn {display: none;}
+}
