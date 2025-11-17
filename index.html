@@ -65,7 +65,19 @@
 
     </header>
     <main>
-        <div class="title"><div class="title__highlight"></div><h1 class="title__services">Услуги и сервисы</h1></div>
+        <div class="title">
+            <div class="title__name">
+                <div class="title__name--highlight"></div><h1 class="title__name--services">Услуги и сервисы</h1>
+            </div>
+            <div class="title__buttons">
+                <div class="title__buttons--window"><p class="title__buttons--window--text">Оставить заявку</p>
+                    <li class="header__navigation--link title__buttons--window"><img src="src/images/icons/repair.svg"></li>
+                </div>
+                <div class="title__buttons--window"><p class="title__buttons--window--text">Статус ремонта</p>
+                    <li class="header__navigation--link title__buttons--window"><img src="src/images/icons/checkstatus.svg"></li>
+                </div>
+            </div>
+        </div>
         <div class="slideMenu">
             <button class="slideMenu__button"><div class="slideMenu__button--active">Ремонтируемые устройства</div></button>
             <button class="slideMenu__button">Дополнительные услуги</button>
@@ -86,44 +98,45 @@
                 <img src="src/images/icons/cps.png" class="firstBlock__image">
             </div>
         </section>
-        <section class="brands">
+        <section class="brands swiper-container">
             <div class="brands__head">
                 <p class="brands__head--text">РЕМОНТ ТЕХНИКИ РАЗЛИЧНЫХ БРЕНДОВ</p>
             </div>
-            <div class="brands__cats">
-                <div class="brands__cats--brand">
+            <div class="brands__cats swiper-wrapper">
+                <div class="brands__cats--brand swiper-slide">
                     <img src="src/images/brands/lenovo.png" class="brands__cats--brand--logo">
                     <button class="brands__cats--brand--btn"><img src="src/images/icons/dropdown.png" class="brands__cats--btn--icon"></button>
                 </div>
-                <div class="brands__cats--brand">
+                <div class="brands__cats--brand swiper-slide">
                     <img src="src/images/brands/samsung.png" class="brands__cats--brand--logo">
                     <button class="brands__cats--brand--btn"><img src="src/images/icons/dropdown.png" class="brands__cats--brand--btn--icon"></button>
                 </div>
-                <div class="brands__cats--brand">
+                <div class="brands__cats--brand swiper-slide">
                     <img src="src/images/brands/apple.png" class="brands__cats--brand--logo">
                     <button class="brands__cats--brand--btn"><img src="src/images/icons/dropdown.png" class="brands__cats--brand--btn--icon"></button>
                 </div>
-                <div class="brands__cats--brand hidden">
+                <div class="brands__cats--brand hidden swiper-slide">
                     <img src="src/images/brands/viewsonic.png" class="brands__cats--brand--logo">
                     <button class="brands__cats--brand--btn"><img src="src/images/icons/dropdown.png" class="brands__cats--brand--btn--icon"></button>
                 </div>
-                <div class="brands__cats--brand">
+                <div class="brands__cats--brand swiper-slide">
                     <img src="src/images/brands/bosch.png" class="brands__cats--brand--logo">
                     <button class="brands__cats--brand--btn"><img src="src/images/icons/dropdown.png" class="brands__cats--brand--btn--icon"></button>
                 </div>
-                <div class="brands__cats--brand">
+                <div class="brands__cats--brand swiper-slide">
                     <img src="src/images/brands/hp.png" class="brands__cats--brand--logo">
                     <button class="brands__cats--brand--btn"><img src="src/images/icons/dropdown.png" class="brands__cats--brand--btn--icon"></button>
                 </div>
-                <div class="brands__cats--brand">
+                <div class="brands__cats--brand swiper-slide">
                     <img src="src/images/brands/acer.png" class="brands__cats--brand--logo">
                     <button class="brands__cats--brand--btn"><img src="src/images/icons/dropdown.png" class="brands__cats--brand--btn--icon"></button>
                 </div>
-                <div class="brands__cats--brand hidden">
+                <div class="brands__cats--brand hidden swiper-slide">
                     <img src="src/images/brands/sony.svg" class="brands__cats--brand--logo">
                     <button class="brands__cats--brand--btn"><img src="src/images/icons/dropdown.png" class="brands__cats--brand--btn--icon"></button>
                 </div>
             </div>
+            <div class="swiper-pagination"></div>
             <div class="brands__more">
                 <img src="src/images/icons/more.png" class="brands__more--pic">
                 <h2 class="brands__more--name">Показать все</h2>
@@ -235,45 +248,45 @@
                     </div>
                 </div>
             </div>
-            <table class="prices__table">
-            <thead class="prices__table--column-names">
-                <tr class="prices__table--row">
-                    <th class="prices__table--row--cell--first">Ремонтные услуги</th>
-                    <th class="prices__table--row--cell">Цена</th>
-                    <th class="prices__table--row--cell">Срок</th>
-                    <th class="prices__table--row--cell"></th>
+            <table>
+            <thead>
+                <tr>
+                    <th>Ремонтные услуги</th>
+                    <th>Цена</th>
+                    <th>Срок</th>
+                    <th></th>
                 </tr>
             </thead>
-            <tbody class="prices__table--content">
-                <tr class="prices__table--row">
-                    <td class="prices__table--row--cell--first">Диагностика</td>
-                    <td class="prices__table--row--cell">Бесплатно</td>
-                    <td class="prices__table--row--cell">30 мин</td>
-                    <td class="prices__table--row--cell"><button class="prices__cats--name--group--btn">ЗАКАЗАТЬ<img src="src/images/icons/dropdown.svg"></button></td>
+            <tbody>
+                <tr>
+                    <td>Диагностика</td>
+                    <td>Бесплатно</td>
+                    <td>30 мин</td>
+                    <td class="last-cell"><button class="prices__cats--name--group--btn">ЗАКАЗАТЬ<img src="src/images/icons/dropdown.svg"></button></td>
                 </tr>
-                <tr class="prices__table--row">
-                    <td class="prices__table--row--cell--first">Замена дисплея</td>
-                    <td class="prices__table--row--cell">1000₽</td>
-                    <td class="prices__table--row--cell">30-120 мин</td>
-                    <td class="prices__table--row--cell"><button class="prices__cats--name--group--btn">ЗАКАЗАТЬ<img src="src/images/icons/dropdown.svg"></button></td>
+                <tr>
+                    <td>Замена дисплея</td>
+                    <td>1000₽</td>
+                    <td>30-120 мин</td>
+                    <td class="last-cell"><button class="prices__cats--name--group--btn">ЗАКАЗАТЬ<img src="src/images/icons/dropdown.svg"></button></td>
                 </tr>
-                <tr class="prices__table--row">
-                    <td class="prices__table--row--cell--first">Замена полифонического динамика</td>
-                    <td class="prices__table--row--cell">1000₽</td>
-                    <td class="prices__table--row--cell">30-120 мин</td>
-                    <td class="prices__table--row--cell"><button class="prices__cats--name--group--btn">ЗАКАЗАТЬ<img src="src/images/icons/dropdown.svg"></button></td>
+                <tr>
+                    <td>Замена полифонического динамика</td>
+                    <td>1000₽</td>
+                    <td>30-120 мин</td>
+                    <td class="last-cell"><button class="prices__cats--name--group--btn">ЗАКАЗАТЬ<img src="src/images/icons/dropdown.svg"></button></td>
                 </tr>
-                <tr class="prices__table--row">
-                    <td class="prices__table--row--cell--first">Тестирование с выдачей технического заключения</td>
-                    <td class="prices__table--row--cell">1000₽</td>
-                    <td class="prices__table--row--cell">30-120 мин</td>
-                    <td class="prices__table--row--cell"><button class="prices__cats--name--group--btn">ЗАКАЗАТЬ<img src="src/images/icons/dropdown.svg"></button></td>
+                <tr>
+                    <td>Тестирование с выдачей технического заключения</td>
+                    <td>1000₽</td>
+                    <td>30-120 мин</td>
+                    <td class="last-cell"><button class="prices__cats--name--group--btn">ЗАКАЗАТЬ<img src="src/images/icons/dropdown.svg"></button></td>
                 </tr>
-                <tr class="prices__table--row">
-                    <td class="prices__table--row--cell--first">Замена программного обеспечения</td>
-                    <td class="prices__table--row--cell">1000₽</td>
-                    <td class="prices__table--row--cell">30-120 мин</td>
-                    <td class="prices__table--row--cell"><button class="prices__cats--name--group--btn">ЗАКАЗАТЬ<img src="src/images/icons/dropdown.svg"></button></td>
+                <tr>
+                    <td>Замена программного обеспечения</td>
+                    <td>1000₽</td>
+                    <td>30-120 мин</td>
+                    <td class="last-cell"><button class="prices__cats--name--group--btn">ЗАКАЗАТЬ<img src="src/images/icons/dropdown.svg"></button></td>
                 </tr>
             </tbody>
             </table>
@@ -283,37 +296,6 @@
                 
             </div>
         </section>
-        <!--
-        <div class="swiper-container brands">
-            <div class="swiper-wrapper brands__cats">
-                <div class="swiper-slide brands__cats--brand">
-                    <img src="src/images/brands/lenovo.png" class="brands__cats--brand--logo">
-                    <button class="brands__cats--brand--btn"><img src="src/images/dropdown.png" class="brands__cats--btn--icon"></button>
-                </div>
-                <div class="swiper-slide brands__cats--brand">
-                    <img src="src/images/brands/samsung.png" class="brands__cats--brand--logo">
-                    <button class="brands__cats--brand--btn"><img src="src/images/dropdown.png" class="brands__cats--brand--btn--icon"></button>
-                </div>
-                <div class="swiper-slide brands__cats--brand">
-                    <img src="src/images/brands/apple.png" class="brands__cats--brand--logo">
-                    <button class="brands__cats--brand--btn"><img src="src/images/dropdown.png" class="brands__cats--brand--btn--icon"></button>
-                </div>
-                <div class="swiper-slide brands__cats--brand">
-                    <img src="src/images/brands/bosch.png" class="brands__cats--brand--logo">
-                    <button class="brands__cats--brand--btn"><img src="src/images/dropdown.png" class="brands__cats--brand--btn--icon"></button>
-                </div>
-                <div class="swiper-slide brands__cats--brand">
-                    <img src="src/images/brands/hp.png" class="brands__cats--brand--logo">
-                    <button class="brands__cats--brand--btn"><img src="src/images/dropdown.png" class="brands__cats--brand--btn--icon"></button>
-                </div>
-                <div class="swiper-slide brands__cats--brand">
-                    <img src="src/images/brands/acer.png" class="brands__cats--brand--logo">
-                    <button class="brands__cats--brand--btn"><img src="src/images/dropdown.png" class="brands__cats--brand--btn--icon"></button>
-                </div>
-            </div>
-            <div class="swiper-pagination"></div> 
-        </div>
-        -->
     </main>
 
     <footer>

@@ -1,4 +1,7 @@
-body {width: 100%; background-color: #F8F8F8;}
+@font-face {
+    font-family: TTLakes;
+    src: url(fonts/TTLakes-Medium.ttf);
+}
 
 .header {
     height: 88px;
@@ -8,7 +11,10 @@ body {width: 100%; background-color: #F8F8F8;}
     justify-content: space-between;
     align-items: center;
     padding: 0px 8px;
-
+    width: 100%;
+    @media (min-width: 1440px) {
+        display: none;
+    }
     &__navigation {
         list-style-type: none;
         gap: 16px;
