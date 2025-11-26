@@ -48,6 +48,45 @@
             </div>
         </div>
     </menu>
+    <menu class="sideMenu feedbackMenu sideMenu--right">
+        <div class="sideMenu__head">
+            <li class="sideMenu__head--icon close-btn"><img src="src/images/icons/close.png"></li>
+        </div>
+        <div class="sideMenu__main">
+            <div class="sideMenu__main--title"><div class="title__name--highlight"></div><h1 class="title__name--services">Обратная связь</h1></div>
+            <div class="sideMenu__main--inputs">
+                <div class="sideMenu__main--inputs--window">
+                    <input type="text" name="name" placeholder="Имя" required>
+                </div>
+                <div class="sideMenu__main--inputs--window">
+                    <input type="tel" name="tel" placeholder="Телефон" required>
+                </div>
+                <div class="sideMenu__main--inputs--window">
+                    <input type="email" name="email" placeholder="Электронная почта" required>
+                </div>
+                <div class="sideMenu__main--inputs--window">
+                    <textarea id="message" name="message" placeholder="Ваше сообщение" required></textarea>
+                </div>
+                <p class="sideMenu__main--inputs--text">Нажимая “отправить”, вы даете согласие на обработку персональных данных и соглашаетесь с нашей политикой конфиденциальности</p>
+            </div>
+            <div class="sideMenu__main--button"><button class="prices__cats--name--group--btn">ОТПРАВИТЬ<img src="src/images/icons/dropdown.svg"></button></div>
+        </div> 
+    </menu>
+    <menu class="sideMenu callMenu sideMenu--right">
+        <div class="sideMenu__head">
+            <li class="sideMenu__head--icon close-btn"><img src="src/images/icons/close.png"></li>
+        </div>
+        <div class="sideMenu__main">
+            <div class="sideMenu__main--title"><div class="title__name--highlight"></div><h1 class="title__name--services">Заказать звонок</h1></div>
+            <div class="sideMenu__main--inputs">
+                <div class="sideMenu__main--inputs--window">
+                    <input type="tel" name="tel" placeholder="Телефон" required>
+                </div>
+                <p class="sideMenu__main--inputs--text">Нажимая “отправить”, вы даете согласие на <div class="sideMenu__main--inputs--text--pink">обработку персональных данных</div> и соглашаетесь с нашей <div  class="sideMenu__main--inputs--text--pink">политикой конфиденциальности</div></p>
+            </div>
+            <div class="sideMenu__main--button"><button class="prices__cats--name--group--btn">ОТПРАВИТЬ<img src="src/images/icons/dropdown.svg"></button></div>
+        </div> 
+    </menu>
     <header class="header">
         <ul class="header__navigation">
             <li class="header__navigation--link burger"><img src="src/images/icons/burger.svg"></li>
@@ -59,8 +98,8 @@
             <li class="header__navigation--link--hidden"><img src="src/images/icons/message.png"></li>
             <li class="header__navigation--link--hidden"><img src="src/images/icons/user.png"></li>
             <li class="header__navigation--divider"></li>
-            <li class="header__navigation--link"><img src="src/images/icons/repair.svg"></li>
-            <li class="header__navigation--link"><img src="src/images/icons/checkstatus.svg"></li>
+            <li class="header__navigation--link call"><img src="src/images/icons/repair.svg"></li>
+            <li class="header__navigation--link feedback"><img src="src/images/icons/checkstatus.svg"></li>
         </ul>
 
     </header>
@@ -70,10 +109,10 @@
                 <div class="title__name--highlight"></div><h1 class="title__name--services">Услуги и сервисы</h1>
             </div>
             <div class="title__buttons">
-                <div class="title__buttons--window"><p class="title__buttons--window--text">Оставить заявку</p>
+                <div class="title__buttons--window call"><p class="title__buttons--window--text">Оставить заявку</p>
                     <li class="header__navigation--link title__buttons--window"><img src="src/images/icons/repair.svg"></li>
                 </div>
-                <div class="title__buttons--window"><p class="title__buttons--window--text">Статус ремонта</p>
+                <div class="title__buttons--window feedback"><p class="title__buttons--window--text">Статус ремонта</p>
                     <li class="header__navigation--link title__buttons--window"><img src="src/images/icons/checkstatus.svg"></li>
                 </div>
             </div>
@@ -98,10 +137,11 @@
                 <img src="src/images/icons/cps.png" class="firstBlock__image">
             </div>
         </section>
-        <section class="brands swiper-container">
+        <section class="brands">
             <div class="brands__head">
                 <p class="brands__head--text">РЕМОНТ ТЕХНИКИ РАЗЛИЧНЫХ БРЕНДОВ</p>
             </div>
+            <div class="swiper">
             <div class="brands__cats swiper-wrapper">
                 <div class="brands__cats--brand swiper-slide">
                     <img src="src/images/brands/lenovo.png" class="brands__cats--brand--logo">
@@ -137,6 +177,7 @@
                 </div>
             </div>
             <div class="swiper-pagination"></div>
+            </div>
             <div class="brands__more">
                 <img src="src/images/icons/more.png" class="brands__more--pic">
                 <h2 class="brands__more--name">Показать все</h2>
@@ -147,36 +188,39 @@
             <div class="equipment__head">
                 <p class="equipment__head--text">РЕМОНТ РАЗЛИЧНЫХ ВИДОВ ТЕХНИКИ</p>
             </div>
-            <div class="equipment__cats">
-                <div class="equipment__cats--name">
+            <div class="swiper">
+            <div class="equipment__cats swiper-wrapper">
+                <div class="equipment__cats--name swiper-slide">
                     <h3 class="equipment__cats--name--text">Ремонт ноутбуков</h3>
                     <button class="equipment__cats--name--btn"><img src="src/images/icons/dropdown.png"></button>
                 </div>
-                <div class="equipment__cats--name">
+                <div class="equipment__cats--name swiper-slide">
                     <h3 class="equipment__cats--name--text">Ремонт планшетов</h3>
                     <button class="equipment__cats--name--btn"><img src="src/images/icons/dropdown.png"></button>
                 </div>
-                <div class="equipment__cats--name">
+                <div class="equipment__cats--name swiper-slide">
                     <h3 class="equipment__cats--name--text">Ремонт ПК</h3>
                     <button class="equipment__cats--name--btn"><img src="src/images/icons/dropdown.png"></button>
                 </div>
-                <div class="equipment__cats--name">
+                <div class="equipment__cats--name swiper-slide">
                     <h3 class="equipment__cats--name--text">Ремонт мониторов</h3>
                     <button class="equipment__cats--name--btn"><img src="src/images/icons/dropdown.png"></button>
                 </div>
             </div>
+            <div class="swiper-pagination"></div> 
+            </div>
             <div class="equipment__more"><img src="src/images/icons/more.png" class="equipment__more--pic">
                     <h2 class="equipment__more--name">Показать все</h2>
                 </div>
-            <div class="swiper-pagination"></div> 
         </section>
 
         <section class="prices">
             <div class="prices__head">
                 <p class="prices__head--text">ЦЕНЫ НА УСЛУГИ</p>
             </div>
-            <div class="prices__cats">
-                <div class="prices__cats--name">
+            <div class="swiper">
+            <div class="prices__cats swiper-wrapper">
+                <div class="prices__cats--name swiper-slide">
                     <div class="prices__cats--name--group">
                         <p class="prices__cats--name--group--text">Ремонтные услуги</p>
                         <h3 class="prices__cats--name--group--maintext">Тестирование с выдачей<br>технического заключения</h3>
@@ -191,7 +235,7 @@
                         
                     </div>
                 </div>
-                <div class="prices__cats--name">
+                <div class="prices__cats--name swiper-slide">
                     <div class="prices__cats--name--group">
                         <p class="prices__cats--name--group--text">Ремонтные услуги</p>
                         <h3 class="prices__cats--name--group--maintext">Диагностика</h3>
@@ -205,7 +249,7 @@
                         <h3 class="prices__cats--name--group--maintext">30-120 мин<button class="prices__cats--name--group--btn">ЗАКАЗАТЬ<img src="src/images/icons/dropdown.svg"></button></h3>
                     </div>
                 </div>
-                <div class="prices__cats--name">
+                <div class="prices__cats--name swiper-slide">
                     <div class="prices__cats--name--group">
                         <p class="prices__cats--name--group--text">Ремонтные услуги</p>
                         <h3 class="prices__cats--name--group--maintext">Замена дисплея</h3>
@@ -219,7 +263,7 @@
                         <h3 class="prices__cats--name--group--maintext">30-120 мин<button class="prices__cats--name--group--btn">ЗАКАЗАТЬ<img src="src/images/icons/dropdown.svg"></button></h3>
                     </div>
                 </div>
-                <div class="prices__cats--name">
+                <div class="prices__cats--name swiper-slide">
                     <div class="prices__cats--name--group">
                         <p class="prices__cats--name--group--text">Ремонтные услуги</p>
                         <h3 class="prices__cats--name--group--maintext">Замена полифонического <br>динамика</h3>
@@ -233,7 +277,7 @@
                         <h3 class="prices__cats--name--group--maintext">30-120 мин<button class="prices__cats--name--group--btn">ЗАКАЗАТЬ<img src="src/images/icons/dropdown.svg"></button></h3>
                     </div>
                 </div>
-                <div class="prices__cats--name">
+                <div class="prices__cats--name swiper-slide">
                     <div class="prices__cats--name--group">
                         <p class="prices__cats--name--group--text">Ремонтные услуги</p>
                         <h3 class="prices__cats--name--group--maintext">Замена программного <br>обеспечения</h3>
@@ -247,6 +291,8 @@
                         <h3 class="prices__cats--name--group--maintext">30-120 мин<button class="prices__cats--name--group--btn">ЗАКАЗАТЬ<img src="src/images/icons/dropdown.svg"></button></h3>
                     </div>
                 </div>
+            </div>
+            <div class="swiper-pagination"></div> 
             </div>
             <table>
             <thead>
@@ -305,7 +351,7 @@
     </footer>
 
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="src/main.js"></script>
+    <script src="./src/main.js"></script>
     
 </body>
 </html>

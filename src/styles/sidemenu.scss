@@ -7,17 +7,25 @@
     height: 100%;
     background: rgba(255, 255, 255, 0.9);
     z-index: 999;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.overlay.active {
+    opacity: 1;
 }
 
 .sideMenu{
-    width: 320px;
     height: 100%;
-    z-index: 1000;
-    top: 0; left: 0;
+    top: 0;
     position: fixed;
     background-color: #FFFFFF;
-    display: none;
     box-shadow: 16px 0 52px rgba(14, 24, 80, 0.2);
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    z-index: 1000;
+    
     &__head{
         display: flex;
         align-items: center;
@@ -100,14 +108,117 @@
                 }
             }
         }
+        &--title{
+            display: flex;
+            align-items: center;
+        }
+        &--inputs{
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            &--text{
+                margin: 16px;
+                width: 100%;
+                color: #B5B6BC;
+                font-family: TTLakes;
+                font-size: 14px;
+            }
+        }
+
+        &--button{
+            display: flex;
+            justify-content: flex-end;
+            margin: 16px;
+        }
     }
 }
 
+.sideMenu:not(.sideMenu--right) {
+    width: 320px;
+    left: -320px;
+}
+
+.sideMenu:not(.sideMenu--right).open {
+    left: 0;
+    visibility: visible;
+    opacity: 1;
+}
+
+.sideMenu--right {
+    width: 320px;
+    right: -320px;
+    left: auto;
+    box-shadow: -16px 0 52px rgba(14, 24, 80, 0.2);
+}
+
+.sideMenu--right.open {
+    right: 0;
+    visibility: visible;
+    opacity: 1;
+}
+
+input{
+    margin: 0px 16px;
+    width: 100%;
+    background-color: #FFFFFF;
+    color: #B5B6BC;
+    border: solid 1px #EAEAEA;
+    border-radius: 8px;
+    font-family: TTLakes;
+    font-size: 16px;
+    font-weight: normal;
+    padding: 16px;
+}
+
+textarea{
+    margin: 0px 16px;
+    background-color: #FFFFFF;
+    color: #B5B6BC;
+    border: solid 1px #EAEAEA;
+    border-radius: 8px;
+    font-family: TTLakes;
+    font-size: 16px;
+    font-weight: normal;
+    padding: 16px;
+}
+
 @media (min-width: 1440px) {
-    .sideMenu {display: block; box-shadow: none;}
-    .overlay {display: none;}
-    .burger {display: none;}
-    main {margin-left: 320px;}
-    footer {margin-left: 352px;}
-    .close-btn {display: none;}
+    main {
+        margin-left: 320px;
+    }
+    footer{
+        margin-left: 352px;
+    }
+    
+    .overlay {
+        z-index: 999; 
+    }
+    .sideMenu:not(.sideMenu--right) {
+        left: 0;
+        visibility: visible;
+        opacity: 1;
+        box-shadow: none;
+        width: 320px;
+        z-index: 998; 
+    }
+    
+    .sideMenu--right {
+        width: 440px;
+        right: -440px;
+        z-index: 1000;
+    }
+    
+    .sideMenu--right.open {
+        right: 0;
+    }
+    
+    .sideMenu--right .sideMenu__head--icon.close-btn {
+        position: absolute;
+        left: -72px;
+        top: 32px;
+    }
+    
+    .sideMenu:not(.sideMenu--right) .close-btn {
+        display: none;
+    }
 }
