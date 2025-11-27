@@ -23,13 +23,15 @@ footer{
 }
 
 p{
-    color: #7E7E82;
     font-family: TTLakes;
     font-size: 14px;
+}
+
+.p{
+    color: #7E7E82;
     margin-top: 16px;
     max-width: 220px;
 }
-
 @media (min-width: 768px) {
     .p-one{
         text-align:left;

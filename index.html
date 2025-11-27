@@ -23,7 +23,7 @@
         </ul>
         <div class="sideMenu__main">
             <ul class="sideMenu__main--list">
-                <li class="sideMenu__main--list--chapter--active"><div class="title__highlight"></div>Ремонт техники</li>
+                <li class="sideMenu__main--list--chapter--active"><div class="title__name--highlight"></div>Ремонт техники</li>
                 <li class="sideMenu__main--list--chapter">Услуги и сервисы</li>
                 <li class="sideMenu__main--list--chapter">Корпоративным клиентам</li>
                 <li class="sideMenu__main--list--chapter">Продавцам техники</li>
@@ -53,7 +53,7 @@
             <li class="sideMenu__head--icon close-btn"><img src="src/images/icons/close.png"></li>
         </div>
         <div class="sideMenu__main">
-            <div class="sideMenu__main--title"><div class="title__name--highlight"></div><h1 class="title__name--services">Обратная связь</h1></div>
+            <div class="sideMenu__main--title"><div class="title__name--highlight sideMenu__main--title"></div><h1 class="title__name--services">Обратная связь</h1></div>
             <div class="sideMenu__main--inputs">
                 <div class="sideMenu__main--inputs--window">
                     <input type="text" name="name" placeholder="Имя" required>
@@ -67,7 +67,7 @@
                 <div class="sideMenu__main--inputs--window">
                     <textarea id="message" name="message" placeholder="Ваше сообщение" required></textarea>
                 </div>
-                <p class="sideMenu__main--inputs--text">Нажимая “отправить”, вы даете согласие на обработку персональных данных и соглашаетесь с нашей политикой конфиденциальности</p>
+                <p class="sideMenu__main--inputs--text">Нажимая “отправить”, вы даете согласие на <span class="sideMenu__main--inputs--text--pink">обработку персональных данных</span> и соглашаетесь с нашей <span class="sideMenu__main--inputs--text--pink">политикой конфиденциальности</span></p>
             </div>
             <div class="sideMenu__main--button"><button class="prices__cats--name--group--btn">ОТПРАВИТЬ<img src="src/images/icons/dropdown.svg"></button></div>
         </div> 
@@ -82,7 +82,7 @@
                 <div class="sideMenu__main--inputs--window">
                     <input type="tel" name="tel" placeholder="Телефон" required>
                 </div>
-                <p class="sideMenu__main--inputs--text">Нажимая “отправить”, вы даете согласие на <div class="sideMenu__main--inputs--text--pink">обработку персональных данных</div> и соглашаетесь с нашей <div  class="sideMenu__main--inputs--text--pink">политикой конфиденциальности</div></p>
+                <p class="sideMenu__main--inputs--text">Нажимая “отправить”, вы даете согласие на <span class="sideMenu__main--inputs--text--pink">обработку персональных данных</span> и соглашаетесь с нашей <span class="sideMenu__main--inputs--text--pink">политикой конфиденциальности</span></p>
             </div>
             <div class="sideMenu__main--button"><button class="prices__cats--name--group--btn">ОТПРАВИТЬ<img src="src/images/icons/dropdown.svg"></button></div>
         </div> 
@@ -128,7 +128,7 @@
         <section class="firstBlock">
             <div>
                 <p class="firstBlock__text">Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
-                <p class="firstBlock__text--hidden">Мы успешно работаем с 1992 года и заслужили репутацию надёжного партнера. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</p>
+                <p class="firstBlock__text--hidden">Мы успешно работаем с 1992 года и заслужили репутацию надёжного партнера. <p class="hideThis">Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</p></p>
                 <div class="firstBlock__more"><img src="src/images/icons/more.png" class="firstBlock__more--pic">
                     <h2 class="firstBlock__more--name">Читать далее</h2>
                 </div>
@@ -294,7 +294,9 @@
             </div>
             <div class="swiper-pagination"></div> 
             </div>
-            <table>
+        </section>
+
+        <table>
             <thead>
                 <tr>
                     <th>Ремонтные услуги</th>
@@ -336,18 +338,16 @@
                 </tr>
             </tbody>
             </table>
-            <div class="prices__bottom">
-                <p class="prices__bottom--text">Все цены указаны с учетом НДС. Стоимость ремонта указана на единичную услугу. Для получения коммерческого предложения на постоянное обслуживание, оставьте заявку.</p>
-                <h4 class="prices__bottom--group">Получить коммерческое <br class="enter">предложение<img src="src/images/icons/dropdown.png" class="prices__bottom--group--dropdown"></h4>
-                
-            </div>
-        </section>
+        <div class="bottom">
+            <p class="bottom__text">Все цены указаны с учетом НДС. Стоимость ремонта указана на единичную услугу. Для получения коммерческого предложения на постоянное обслуживание, оставьте заявку.</p>
+            <h4 class="bottom__group">Получить коммерческое <br class="enter">предложение<img src="src/images/icons/dropdown.png" class="bottom__group--dropdown"></h4>
+        </div>
     </main>
 
     <footer>
-        <p class="p-one">© 2019 CPS<br>Разработано командой Apesong</p>
-        <p class="p-two">Политика конфиденциальности</p>
-        <p class="p-three">Информация, размещенная на данной странице, не является публичной офертой</p>
+        <p class="p p-one">© 2019 CPS<br>Разработано командой Apesong</p>
+        <p class="p p-two">Политика конфиденциальности</p>
+        <p class="p p-three">Информация, размещенная на данной странице, не является публичной офертой</p>
     </footer>
 
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>

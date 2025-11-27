@@ -125,6 +125,7 @@ body {width: 100%; background-color: #F8F8F8;}
 .firstBlock{
     @media (min-width: 768px) {
         display: flex;
+        margin-top: 32px;
     }
     &__text{
         min-width: 288px;
@@ -135,25 +136,21 @@ body {width: 100%; background-color: #F8F8F8;}
         color: #1B1C21;
         @media (min-width: 768px) {
             margin-left: 24px;
-            margin-right: 48px;
-            max-width: 320px;
+            min-width: 320px;
         }
         @media (min-width: 1024px) {
             margin-left: 34px;
-            margin-right: 36px;
-            min-width: 490px;
+            max-width: 490px;
         }
         &--hidden{
             display: none;
             @media (min-width: 768px) {
                 display: flex;
-                margin-left: 24px;
-                margin-right: 48px;
+                margin: 0px 0px 0px 28px;
                 color: #1B1C21;
             }
             @media (min-width: 1024px) {
-                margin-left: 34px;
-                margin-right: 36px;
+                margin: 28px 0px 0px 34px;
                 min-width: 490px;
             }
         }
@@ -183,13 +180,15 @@ body {width: 100%; background-color: #F8F8F8;}
         width: 100%;
         height: auto;
         @media (min-width: 768px) {
-            max-width: 360px;
+            width: 360px;
             margin-right: 24px;
+            margin-left: 24px;
             border-radius: 6px;
         }
         @media (min-width: 1440px) {
-            min-width: 531px;
-            
+            width: 531px;
+            margin-right: 28px;
+            margin-left: 36px;
         }
     }
 }
@@ -221,13 +220,16 @@ body {width: 100%; background-color: #F8F8F8;}
     }
     &__cats::-webkit-scrollbar{width: 0;}
     &__cats{
+        box-shadow: 
+                inset 50px 0 50px -20px rgba(255, 255, 255, 0.3),
+                inset -50px 0 50px -20px rgba(255, 255, 255, 0.3);
         margin: 16px;
         @media (min-width: 768px) {
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
             margin: 24px;
-            overflow: visible !important;
+            overflow: visible;
         }
         @media (min-width: 1024px) {
             margin: 32px;
@@ -236,15 +238,20 @@ body {width: 100%; background-color: #F8F8F8;}
         &--brand{ 
             white-space: nowrap;
             display: flex;
-            align-items: center !important;
+            align-items: center;
             justify-content: space-between;
             max-width: 240px;
             max-height: 72px;
+            flex-shrink: 0;
             padding: 16px;
             @media (min-width: 768px) {
+                width: 220px;
                 min-width: 220px;
+                height: auto;
+                
             }
             @media (min-width: 1440px) {
+                width: 238px;
                 min-width: 238px;
             }
 
@@ -318,7 +325,7 @@ body {width: 100%; background-color: #F8F8F8;}
         margin: 16px;
         @media (min-width: 768px) {
             margin: 24px;
-            overflow: visible !important;
+            overflow: auto;
         }
         @media (min-width: 1024px) {
             margin: 32px;
@@ -328,7 +335,7 @@ body {width: 100%; background-color: #F8F8F8;}
             white-space: nowrap;
             display: flex;
             justify-content: space-between;
-            min-width: 240px;
+            max-width: 240px;
             min-height: 160px;
             position: relative;
             @media (min-width: 768px) {
@@ -357,9 +364,6 @@ body {width: 100%; background-color: #F8F8F8;}
                 justify-content: center;
                 width: 40px;
                 height: 40px;
-                margin-right: 16px;
-                margin-bottom: 16px;
-                /* Абсолютное позиционирование для кнопки */
                 position: absolute;
                 bottom: 16px;
                 right: 16px;
@@ -425,7 +429,7 @@ body {width: 100%; background-color: #F8F8F8;}
             display: flex;
         }
         @media (min-width: 768px) {
-            display: none;
+            display: none !important;
         }
         
 
@@ -433,9 +437,8 @@ body {width: 100%; background-color: #F8F8F8;}
             display: flex;
             padding: 0 16px 16px 16px;
             flex-direction: column;
-            /* Устанавливаем размеры для третьего свайпера */
-            min-width: 260px;
-            min-height: 200px;
+            max-width: 260px;
+            max-height: 200px;
             &--group{
                 line-height: 0.2;
                 &--text{
@@ -477,8 +480,9 @@ body {width: 100%; background-color: #F8F8F8;}
         }
         
     }
+}
 
-    &__bottom{
+.bottom{
     margin: 16px;
     margin-bottom: 40px;
     @media (min-width: 768px) {
@@ -489,22 +493,21 @@ body {width: 100%; background-color: #F8F8F8;}
         margin: 32px;
     }
     
-        &--text{
-            font-size: 14px;
-            margin-bottom: 16px;
-            color: #1B1C21;
-            max-width: 421px;
-        }
+    &__text{
+        font-size: 14px;
+        margin-bottom: 16px;
+        color: #1B1C21;
+        max-width: 421px;
+    }
 
-        &--group{
-            font-size: 16px;
-            font-family: TTLakes;
-            font-weight:normal;
-            margin: 0;
+    &__group{
+        font-size: 16px;
+        font-family: TTLakes;
+        font-weight:normal;
+        margin: 0;
 
-            &--dropdown{
-                margin-left: 10px;
-            }
+        &--dropdown{
+            margin-left: 10px;
         }
     }
 }
@@ -516,7 +519,9 @@ table{
         margin: 24px;
         border-collapse: collapse;
         table-layout: auto;
-        width: 100%;
+        min-width: 720px;
+        width: calc(336px + 50vw);
+        max-width: calc(100vw - 48px);
     }
     @media (min-width: 1440px) {
         margin: 32px;
@@ -559,7 +564,7 @@ table{
 }
 
 .last-cell{
-    @media (min-width: 1024px) {
+    @media (min-width: 768px) {
         display: flex;
         justify-content: end;
     }
@@ -582,6 +587,15 @@ table{
     }
 }
 
+.hideThis{
+    display: none;
+    @media (min-width: 1440px) {
+        display: flex;
+        margin-left: 34px;
+        margin-right: 36px;
+    }
+}
+
 .swiper {
     display: flex;
     flex-direction: column;
@@ -597,14 +611,23 @@ table{
     border: solid 1px #EAEAEA;
     border-radius: 6px;
     flex-shrink: 0;
-    width: auto;
 }
 
 .swiper-pagination{
     display: flex;
     justify-content: center;
     margin-top: 16px;
+    position: relative !important;
     @media (min-width: 768px) {
         display: none;
     }
+}
+
+.swiper-pagination .swiper-pagination-bullet-active {
+    color: #B5B6BC;
+    background-color:#B5B6BC;
+}
+
+.brands__cats--brand swiper-slide swiper-slide-active{
+    margin-right: 24px !important;
 }
