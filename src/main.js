@@ -1,6 +1,5 @@
 const swiper = new Swiper(".swiper", {
     slidesPerView: 'auto',
-    spaceBetween: 16,
     enabled: true,
     pagination: {
         el: ".swiper-pagination",
@@ -9,15 +8,12 @@ const swiper = new Swiper(".swiper", {
     breakpoints: {
         320: {
             enabled: true,
-            spaceBetween: 16,
         },
         768: {
             enabled: false, 
-            spaceBetween: 24,
         },
         1440: {
             enabled: false,
-            spaceBetween: 32,
         }
     }
 });
@@ -100,3 +96,33 @@ overlay.addEventListener('click', closeAllMenus);
 
 document.addEventListener('DOMContentLoaded', checkScreen);
 window.addEventListener('resize', checkScreen);
+
+const more2 = document.querySelector('.firstBlock__more');
+const hiddenText = document.querySelector('.firstBlock__text--hidden');
+const hideThis = document.querySelector('.hideThis');
+
+more2.addEventListener('click', function() {
+    hiddenText.classList.toggle('show-text');
+    hideThis.classList.toggle('show-text');
+});
+
+const allMoreButtons = document.querySelectorAll('.more');
+allMoreButtons.forEach(button => {
+    button.addEventListener('click', function() {
+        alert('Пока не работает');
+    });
+});
+
+const allRoundButtons = document.querySelectorAll('.round__btn');
+allRoundButtons.forEach(button => {
+    button.addEventListener('click', function() {
+        alert('Пока не работает');
+    });
+});
+
+const allSendButtons = document.querySelectorAll('.send');
+allSendButtons.forEach(button => {
+    button.addEventListener('click', function() {
+        alert('Пока не работает');
+    });
+});
