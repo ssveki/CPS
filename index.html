@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="src/global.css">
     <link rel="Icon" type="png" href="src/images/icons/logo.svg">
     <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+        rel="stylesheet"
+        href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
 </head>
 <body>
@@ -16,14 +16,14 @@
     <menu class="sideMenu">
         <ul class="sideMenu__head">
             <div class="sideMenu__head--group">
-            <li class="sideMenu__head--icon close-btn"><img src="src/images/icons/close.png"></li>
+            <li class="header__navigation--link close-btn"><img src="src/images/icons/close.png"></li>
             <li class="sideMenu__head--logo"><img src="src/images/icons/logo.svg"></li>
             </div>
-            <li class="sideMenu__head--icon"><img src="src/images/icons/search.png"></li>
+            <li class="header__navigation--link"><img src="src/images/icons/search.png"></li>
         </ul>
         <div class="sideMenu__main">
             <ul class="sideMenu__main--list">
-                <li class="sideMenu__main--list--chapter--active"><div class="title__name--highlight"></div>Ремонт техники</li>
+                <li class="sideMenu__main--list--chapter activeChapter"><div class="title__name--highlight"></div>Ремонт техники</li>
                 <li class="sideMenu__main--list--chapter">Услуги и сервисы</li>
                 <li class="sideMenu__main--list--chapter">Корпоративным клиентам</li>
                 <li class="sideMenu__main--list--chapter">Продавцам техники</li>
@@ -32,25 +32,25 @@
                 <li class="sideMenu__main--list--chapter">Наши сервисные центры</li>
                 <li class="sideMenu__main--list--chapter">Контакты</li>
             </ul>
-            <div style="margin-left: 16px; @media (min-width: 768px){margin-left: 24px}">
-                <ul class="sideMenu__main--connect">
-                    <li class="sideMenu__main--connect--icon header__navigation--link"><img src="src/images/icons/phone.png"></li>
-                    <li class="sideMenu__main--connect--icon header__navigation--link"><img src="src/images/icons/message.png"></li>
-                    <li class="sideMenu__main--connect--icon header__navigation--link"><img src="src/images/icons/user.png"></li>
-                </ul>
-                <div class="sideMenu__main--contacts">
-                    <p class="sideMenu__main--contacts--mail">mail@cps.com</p>
-                    <h1 class="sideMenu__main--contacts--phone">8 800 890 8900</h1>
-                    <div class="sideMenu__main--contacts--language">
-                        <p class="sideMenu__main--contacts--language--name--active">RU</p><p class="sideMenu__main--contacts--language--name">EN</p><p class="sideMenu__main--contacts--language--name">CH</p>
-                    </div>
+            <ul class="sideMenu__main--connect">
+                <li class="sideMenu__main--connect--icon header__navigation--link"><img src="src/images/icons/phone.png"></li>
+                <li class="sideMenu__main--connect--icon header__navigation--link"><img src="src/images/icons/message.png"></li>
+                <li class="sideMenu__main--connect--icon header__navigation--link"><img src="src/images/icons/user.png"></li>
+            </ul>
+            <div class="sideMenu__main--contacts">
+                <p class="sideMenu__main--contacts--mail">mail@cps.com</p>
+                <h1 class="sideMenu__main--contacts--phone">8 800 890 8900</h1>
+                <div class="sideMenu__main--contacts--language">
+                    <p class="sideMenu__main--contacts--language--name active">RU</p>
+                    <p class="sideMenu__main--contacts--language--name">EN</p>
+                    <p class="sideMenu__main--contacts--language--name">CH</p>
                 </div>
             </div>
         </div>
     </menu>
     <menu class="sideMenu feedbackMenu sideMenu--right">
         <div class="sideMenu__head">
-            <li class="sideMenu__head--icon close-btn"><img src="src/images/icons/close.png"></li>
+            <li class="header__navigation--link close-btn"><img src="src/images/icons/close.png"></li>
         </div>
         <div class="sideMenu__main">
             <div class="sideMenu__main--title"><div class="title__name--highlight sideMenu__main--title"></div><h1 class="title__name--services">Обратная связь</h1></div>
@@ -74,7 +74,7 @@
     </menu>
     <menu class="sideMenu callMenu sideMenu--right">
         <div class="sideMenu__head">
-            <li class="sideMenu__head--icon close-btn"><img src="src/images/icons/close.png"></li>
+            <li class="header__navigation--link close-btn"><img src="src/images/icons/close.png"></li>
         </div>
         <div class="sideMenu__main">
             <div class="sideMenu__main--title"><div class="title__name--highlight"></div><h1 class="title__name--services">Заказать звонок</h1></div>
@@ -101,8 +101,9 @@
             <li class="header__navigation--link call"><img src="src/images/icons/repair.svg"></li>
             <li class="header__navigation--link feedback"><img src="src/images/icons/checkstatus.svg"></li>
         </ul>
-
     </header>
+    
+
     <main>
         <div class="title">
             <div class="title__name">
@@ -129,6 +130,7 @@
             <div>
                 <p class="firstBlock__text">Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
                 <p class="firstBlock__text--hidden">Мы успешно работаем с 1992 года и заслужили репутацию надёжного партнера. <p class="hideThis">Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</p></p>
+                <p class="firstBlock__text--all">Наш многолетний опыт — это гарантия того, что диагностика будет точной, а ремонт — качественным. Мы ценим ваше время и доверие, поэтому предлагаем честные цены и прозрачные условия. Приходите в сервис, где о вашей технике позаботятся с душой и профессионализмом.</p>
                 <div class="firstBlock__more"><img src="src/images/icons/more.png" class="firstBlock__more--pic">
                     <h2 class="firstBlock__more--name">Читать далее</h2>
                 </div>
@@ -157,12 +159,12 @@
                 </div>
                 <div class="swiper-slide">
                 <div class="brands__cats--brand">
-                    <img src="src/images/brands/apple.png" class="brands__cats--brand--logo">
+                    <img src="src/images/brands/apple.png" class="brands__cats--brand--logo" style="max-height: 40px;">
                     <button class="round__btn"><img src="src/images/icons/dropdown.png" class="brands__cats--brand--btn--icon"></button>
                 </div>
                 </div>
-                <div class="swiper-slide hidden">
-                <div class="brands__cats--brand hidden">
+                <div class="swiper-slide">
+                <div class="brands__cats--brand">
                     <img src="src/images/brands/viewsonic.png" class="brands__cats--brand--logo">
                     <button class="round__btn"><img src="src/images/icons/dropdown.png" class="brands__cats--brand--btn--icon"></button>
                 </div>
@@ -179,22 +181,46 @@
                     <button class="round__btn"><img src="src/images/icons/dropdown.png" class="brands__cats--brand--btn--icon"></button>
                 </div>
                 </div>
-                <div class="swiper-slide">
+                <div class="swiper-slide hidden-slide open-desktop">
                 <div class="brands__cats--brand">
                     <img src="src/images/brands/acer.png" class="brands__cats--brand--logo">
                     <button class="round__btn"><img src="src/images/icons/dropdown.png" class="brands__cats--brand--btn--icon"></button>
                 </div>
                 </div>
-                <div class="swiper-slide hidden">
-                <div class="brands__cats--brand hidden">
+                <div class="swiper-slide hidden-slide open-desktop">
+                <div class="brands__cats--brand">
                     <img src="src/images/brands/sony.svg" class="brands__cats--brand--logo">
+                    <button class="round__btn"><img src="src/images/icons/dropdown.png" class="brands__cats--brand--btn--icon"></button>
+                </div>
+                </div>
+                <div class="swiper-slide hidden-slide">
+                <div class="brands__cats--brand">
+                    <img src="src/images/brands/ardor.webp" class="brands__cats--brand--logo" style="max-height: 40px;">
+                    <button class="round__btn"><img src="src/images/icons/dropdown.png" class="brands__cats--brand--btn--icon"></button>
+                </div>
+                </div>
+                <div class="swiper-slide hidden-slide">
+                <div class="brands__cats--brand">
+                    <img src="src/images/brands/dexp.webp" class="brands__cats--brand--logo">
+                    <button class="round__btn"><img src="src/images/icons/dropdown.png" class="brands__cats--brand--btn--icon"></button>
+                </div>
+                </div>
+                <div class="swiper-slide hidden-slide">
+                <div class="brands__cats--brand">
+                    <img src="src/images/brands/mi.webp" class="brands__cats--brand--logo" style="max-height: 40px;">
+                    <button class="round__btn"><img src="src/images/icons/dropdown.png" class="brands__cats--brand--btn--icon"></button>
+                </div>
+                </div>
+                <div class="swiper-slide hidden-slide">
+                <div class="brands__cats--brand">
+                    <img src="src/images/brands/asus.webp" class="brands__cats--brand--logo" style="max-height: 40px;">
                     <button class="round__btn"><img src="src/images/icons/dropdown.png" class="brands__cats--brand--btn--icon"></button>
                 </div>
                 </div>
             </div>
             <div class="swiper-pagination"></div>
             </div>
-            <div class="more">
+            <div class="more more-brands">
                 <img src="src/images/icons/more.png" class="more__pic">
                 <h2 class="more__name">Показать все</h2>
             </div>
@@ -224,16 +250,40 @@
                     <button class="round__btn equipment__btn"><img src="src/images/icons/dropdown.png"></button>
                 </div>
                 </div>
-                <div class="swiper-slide">
+                <div class="swiper-slide hidden-slide open-desktop">
                 <div class="equipment__cats--name">
                     <h3 class="equipment__cats--name--text">Ремонт мониторов</h3>
+                    <button class="round__btn equipment__btn"><img src="src/images/icons/dropdown.png"></button>
+                </div>
+                </div>
+                <div class="swiper-slide hidden-slide">
+                <div class="equipment__cats--name">
+                    <h3 class="equipment__cats--name--text">Ремонт периферии</h3>
+                    <button class="round__btn equipment__btn"><img src="src/images/icons/dropdown.png"></button>
+                </div>
+                </div>
+                <div class="swiper-slide hidden-slide">
+                <div class="equipment__cats--name">
+                    <h3 class="equipment__cats--name--text">Ремонт консолей</h3>
+                    <button class="round__btn equipment__btn"><img src="src/images/icons/dropdown.png"></button>
+                </div>
+                </div>
+                <div class="swiper-slide hidden-slide">
+                <div class="equipment__cats--name">
+                    <h3 class="equipment__cats--name--text">Ремонт принтеров</h3>
+                    <button class="round__btn equipment__btn"><img src="src/images/icons/dropdown.png"></button>
+                </div>
+                </div>
+                <div class="swiper-slide hidden-slide">
+                <div class="equipment__cats--name">
+                    <h3 class="equipment__cats--name--text">Ремонт SSD</h3>
                     <button class="round__btn equipment__btn"><img src="src/images/icons/dropdown.png"></button>
                 </div>
                 </div>
             </div>
             <div class="swiper-pagination"></div> 
             </div>
-            <div class="more">
+            <div class="more more-equipment">
                 <img src="src/images/icons/more.png" class="more__pic">
                 <h2 class="more__name">Показать все</h2>
             </div>
@@ -385,7 +435,9 @@
     </footer>
 
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="src/main.js"></script>
+    <script src="main.js"></script>
+<!--     <script src="./src/main.js"></script>
+    <script src="/src/main.js"></script> -->
     
 </body>
 </html>

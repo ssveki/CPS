@@ -34,7 +34,8 @@
             display: flex;
             justify-content: center;
             align-items: center;
-
+            transition: transform 0.25s ease;
+            cursor: pointer;
             &--hidden{
                 display: none;
                 @media (min-width: 768px) {
@@ -46,6 +47,8 @@
                     display: flex;
                     justify-content: center;
                     align-items: center;
+                    transition: transform 0.25s ease;
+                    cursor: pointer;
                 }
             }
         }
@@ -82,4 +85,13 @@
             padding-right: 16px ;
         }
     }
+}
+
+.header__navigation--link:hover{
+    transform: scale(1.1);
+}
+
+
+.header__navigation--link--hidden:hover{
+    transform: scale(1.1);
 }
