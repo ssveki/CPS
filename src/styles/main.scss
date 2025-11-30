@@ -324,7 +324,7 @@ body {width: 100%; background-color: #F8F8F8;}
         }
         @media (min-width: 1440px) {
             margin: 32px;
-            column-gap: 32px;
+            column-gap: 31px;
         }
         &--brand{ 
             white-space: nowrap;
@@ -356,7 +356,8 @@ body {width: 100%; background-color: #F8F8F8;}
         gap: 16px;
         @media (min-width: 768px) {
             margin: 24px;
-            gap: 24px;
+            column-gap: 23px;
+            row-gap: 16px;
             flex-wrap: wrap;
         }
         @media (min-width: 1440px) {
