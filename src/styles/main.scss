@@ -615,6 +615,12 @@ table{
     flex-shrink: 0;
     width: auto !important;
     margin-right: 0px !important;
+    cursor: pointer;
+    transition: transform 0.25s ease;
+}
+.swiper-slide:hover{
+    transform: translateY(-4px);
+    border: solid 1px #41F6D7;
 }
 
 .swiper-pagination{
