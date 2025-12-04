@@ -64,6 +64,16 @@ function checkScreen() {
     } else {
         sideMenu.classList.remove('open');
     }
+
+    if (window.innerWidth >= 768) {
+        closeButtons.forEach(button => {
+            button.style.marginLeft = '-30px';
+        });
+    } else {
+        closeButtons.forEach(button => {
+            button.style.marginLeft = '0';
+        });
+    }
 }
 
 burgerButton.addEventListener('click', toggleSideMenu);
